@@ -15,6 +15,8 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 \usepackage{here}
 \usepackage{float}
 \usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{blindtext}
 
 \begin{titlepage}
 \author{Klas Benjamin, Knoll Alexander }
@@ -74,10 +76,73 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 
 \part*{Euler-Bernoulli-Balken}
 
+	Der Euler-Bernoulli-Balken ist ein einfaches Modell für eine Biegevorgang auf Grund von
+	Spannung. Bezeichnet $y(x)$ für $0 ≤ x ≤ L$ die vertikale Auslenkung, so gilt
+	$EIy (x) = f (x)$ wobei $E$ eine Material-Konstante und $I$ das Trägheitsmoment ist. 
+	$f(x)$ beschreibt als Kraft pro Einheitslänge die Beladung des Balkens. Durch Diskretisierung erhält man aus der Differentialgleichung ein lineares Gleichungsystem, das hier iterativ gelöst werden soll.
+	
+	Betrachtet wird dabei ein Stahlträger der Länge $L = 10m$ mit Tiefe $d = 5cm$ und Breite $b = 10cm$. Die Dichte von Stahl ist ungefähr $7850 \frac{kg}{m^3}$, 
+	$E = 2 \cdot 10^11 \frac{N}{m^2}$, $I = \frac{bd^3}{12}$
 
-\Section{Unbelasteter Balken}
+\section{Unbelasteter Balken}
 
+	Zunächst soll ein an beiden Seiten aufliegender Balken untersucht werden.
+	Somit gilt $y(0) = y'(x0) = y(L) = y'(L) = 0 $.\newline
+	Um entscheiden zu können welches Verfahren zur Lösung des Problems geeignet ist, müssen diese auf Konvergenz untersucht werden. Das Problem ist gegeben durch
+	\begin{equation}
+		Ax = \frac{h^4}{EI}f,
+	\end{equation}
+	
+	wobei $h = \frac{L}{n+1}$ und $f = g \cdot f(x)$ gilt. Um zu prüfen ob eines der Verfahren konvergiert muss $A$ auf gewisse eigenschaften überprüft werden. Die Verfahren Konvergieren wenn eine der folgenden bedingungen erfüllt sind.
+	
+	\begin{itemize}
+		\centering
+		\item Jacobi Verfahren
+		\begin{itemize}
+			\centering	
+			\item Diagonaldominanz
+		\end{itemize}
+		\item Gauß-Seidel Verfahren
+		\begin{itemize}
+			\centering
+			\item Diagonaldominanz
+			\item Positiv-definit
+		\end{itemize}
+	\end{itemize}
+	
+	\subsection{Konvergenzuntersuchung}
+		
+		\subsubsection{Diagonaldominanz}
+			Beide Verfahren konvergieren sobald $A$ diagonaldominant ist. Speziel
+			für die gegebene Matrix lässt sich sagen, dass dies nicht der Fall ist.
+			Für Strikte Diagonaldominanz muss gelten
+			\begin{equation*}
+				\sum_{j = 1, j \neq i}^{n} |a_{ij}| < |a_{ii}|,
+			\end{equation*}
+		
+			bzw. für Schwache Diagonaldominanz
+			\begin{equation*}
+				\sum_{j = 1, j \neq i}^{n} |a_{ij}| \leq |a_{ii}|.
+			\end{equation*}
+		
+			Somit wird ersichtlich dass aufgrund der beiden ersten und leitzen Zeilen
+			$A$ nicht Diagonaldominant ist und somit dass Jacobi Verfahren nicht
+			konvergiert.
 
+		\subsubsection{Positiv Definit}
+		
+			Eine Matrix M ist positiv Definit genau dann wenn alle Eigenwerte größer als $0$ sind. Zur bestimmung der Eigenwerte wird folgende Gleichung gelöst
+			\begin{equation*}
+				det(A - E\lambda) = 0.
+			\end{equation*}
+			
+			Glücklicherweise kürzen sich viele Terme da auf den meisten Diagonalen Null Einträge enthalten sind. Somit erzeugt einzig die Hauptdiagonale einen Term, für beliebig große Matrizen dieser Form,
+			der dargestellt werden kann als
+			\begin{equation*}
+				(12-\lambda)\cdot\prod_{i=1}^{n+1}(6-\lambda) \cdot (12-\lambda) = 0
+			\end{equation*}
+			
+			Somit sind nur die Eigenwerte $\lambda = 12$ und $\lambda = 6$ lösungen. Da diese Eigenwerte positiv sind folgt, dass das Gaus-Seidel Verfahren für beliebig große Matrizen $A$ konvergiert.
 \Section{Belasteter Balken}
 
 
