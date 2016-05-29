@@ -1,5 +1,6 @@
 
 \documentclass[12pt,titlepage]{article}
+
 \usepackage[utf8x]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{cite}
@@ -17,6 +18,10 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 \usepackage{fancyhdr}
 \usepackage{lmodern}
 \usepackage{blindtext}
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+
 
 \begin{titlepage}
 \author{Klas Benjamin, Knoll Alexander }
@@ -45,6 +50,8 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+\newcommand{\norm}[1]{\lvert #1 \rvert}
+
 
 \lstloadlanguages{Python}
 \lstset{numbers=left,stepnumber=1,frame=single,language=Python,
@@ -93,7 +100,7 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 		Ax = \frac{h^4}{EI}f,
 	\end{equation}
 	
-	wobei $h = \frac{L}{n+1}$ und $f = g \cdot f(x)$ gilt. Um zu prüfen ob eines der Verfahren konvergiert muss $A$ auf gewisse eigenschaften überprüft werden. Die Verfahren Konvergieren wenn eine der folgenden bedingungen erfüllt sind.
+	wobei $h = \frac{L}{n+1}$ und $f = g \cdot f(x)$ gilt. Um zu prüfen ob eines der Verfahren konvergiert muss $A$ auf gewisse eigenschaften besitzen. Die Verfahren Konvergieren wenn eine der folgenden bedingungen erfüllt sind.
 	
 	\begin{itemize}
 		\centering
@@ -126,10 +133,10 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 			\end{equation*}
 		
 			Somit wird ersichtlich dass aufgrund der beiden ersten und leitzen Zeilen
-			$A$ nicht Diagonaldominant ist und somit dass Jacobi Verfahren nicht
+			$A$ nicht Diagonaldominant ist und deswegen dass Jacobi Verfahren, in diesem Fall, nicht
 			konvergiert.
 
-		\subsubsection{Positiv Definit}
+		\subsubsection{Positiv Definititheit}
 		
 			Eine Matrix M ist positiv Definit genau dann wenn alle Eigenwerte größer als $0$ sind. Zur bestimmung der Eigenwerte wird folgende Gleichung gelöst
 			\begin{equation*}
@@ -139,22 +146,311 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 			Glücklicherweise kürzen sich viele Terme da auf den meisten Diagonalen Null Einträge enthalten sind. Somit erzeugt einzig die Hauptdiagonale einen Term, für beliebig große Matrizen dieser Form,
 			der dargestellt werden kann als
 			\begin{equation*}
-				(12-\lambda)\cdot\prod_{i=1}^{n+1}(6-\lambda) \cdot (12-\lambda) = 0
+				(12-\lambda)\cdot\prod_{i=1}^{n-1}(6-\lambda) \cdot (12-\lambda) = 0
 			\end{equation*}
 			
 			Somit sind nur die Eigenwerte $\lambda = 12$ und $\lambda = 6$ lösungen. Da diese Eigenwerte positiv sind folgt, dass das Gaus-Seidel Verfahren für beliebig große Matrizen $A$ konvergiert.
-\Section{Belasteter Balken}
+			
+	\subsection{Implementierung Gauss-Seidel}
+		
+		Beim Gauss-Seidel verfahren werden immer die Aktuellsten Werte der Lösung verwendet um einen Wert für die Nächste Stelle zu berechnen. Hierfür wird Gleichung (1) nach dem jeweiligen $x$ aufgelöst. Somit erhält man die Form
+		\begin{equation}
+			x_{k}^{(m+1)} \coloneqq \frac{1}{a_{ii}}\left(b_{k} - \sum_{i=1}^{k-1}a_{ki}\cdot x_{i}^{(m+1)} - \sum_{i = k+1}^{n}a_{ki}\cdot x_{i}^m\right),
+		\end{equation}
+		wobei $b_k$ die rechte Seite der von Gleichung (1) ist, und $a$ die jeweiligen einträge der Matrix $A$.
+		Eine Implementierungsmöglichkeit wäre es Bandmatrizen zu benutzen, da diese wegen aussparung der Nullen
+		in diesem Fall einen deutlich geringeren Speicherbedarf besitzen. Jedoch für dass Speziell gegebene Problem ist 
+		es sinnvoller hart Kodierte Terme zu verwenden. Somit fällt nähmlich die Zugriffszeit auf Elemente, als auch der komplette Speicherbedarf, weg. Eine mögliche Umsetzung könnte wie folgt aussehen \newline
+		\newline
+		\begin{tabular}{c}
+		\begin{lstlisting}
+		def inner_sum(ys, index):
+		    if 1 < index < len(ys)-2:
+		        result = ys[index-2] - 4 * ys[index-1] - 4 * ys[index+1] + ys[index+2]
+		    elif index == 0:
+		        result = -6 * ys[index+1] + (4.0/3.0) * ys[index+2]
+		    elif index == 1:
+		        result = -4 * ys[index-1] - 4 * ys[index+1] + ys[index+2]
+		    elif index == len(ys)-2:
+		        result = ys[index-2] - 4 * ys[index-1] - 4 * ys[index+1]
+		    else:
+		        result = (4.0/3.0) * ys[index-2] - 6 * ys[index-1]
+		    return result
+		    
+		def seidel(ys, bs):
+			ys_old = list(ys) # anlegen einer kopie, somit gehen alte Werte nicht verloren
+		    for i in range(len(ys)):
+		    	diag_elem = 6.0
+		        if i == 0 or i == len(ys)-1:
+		        	diag_elem = 12.0
+		        ys[i] = (bs[i] - inner_sum(ys, i))/diag_elem
+		    return ys, ys_old
+	 	\end{lstlisting}
+		\end{tabular}
+		\newpage
+		Die Funktion $seidel$ nimmt als argument zwei Listen. Die aktuelle Lsung  $x^m$ und die rechte Seite der Gleichung $b$. Da der Algorithmus die bergebene Liste der aktuellen Lsung bearbeitet, also ihren Zustand verndert, ist es notwendig sie vorher in einer Kopie zu sichern. Somit gehen die alten Werte nicht verloren
+		und es knnen weitere Untersuchungen vorgenommen werden. Die Funktion $inner\_sum$, aufgerufen durch $seidel$ berechnet ausgehend von einem Index, wie der Name es schon vermuten lsst, die innere Summen von Gleichung (2), also
+		\begin{equation*}
+			inner\_sum = \sum_{i=1}^{k-1}a_{ki}\cdot x_{i}^{(m+1)} + \sum_{i = k+1}^{n}a_{ki}\cdot x_{i}^m.
+		\end{equation*}
+		
+		Dieser Algorithmus wird iterativ von der Funktion $solve$ aufgerufen. Parameter fr $solve$ sind der Startvektor
+		$x^0$, die rechte Seite $b$, die Anzahl an maximal Iterationen als auch eine Toleranz fr den Lsungsfortschritt.
+		\newline \newline
+		\begin{tabular}{c}
+		\begin{lstlisting}
+		def solve(ys, bs, max_iter=40000, tol=1e-6):
+    		it_counter = 0
+    		iterating = True
+   	 		while iterating:
+        		_, ys_old = seidel2(ys, bs)
+        		step = max([a_i - b_i for a_i, b_i in zip(ys, ys_old)])
+        		it_counter += 1
+        		if it_counter >= max_iter or abs(step) <= tol:
+            		iterating = False
+    		return it_counter		
+	 	\end{lstlisting}
+		\end{tabular}
+		\newline \newline
+		Die Funktion iteriert solange bis entweder die Anzahl an maximal iterationen erreicht, oder bis dass Kriterium
+		\begin{equation*}
+			\max [x^{m+1}-x^{m}] < tol
+		\end{equation*}
+		erfllt ist.
+		
+		\subsubsection{Parallelisierung}
+			Der Algorithmus selbst ist nicht parallelisierbar, da für die aktuelle Berechnung immer die aktuellsten Werte benötigt werden. Dass macht es unmöglich die dass Problem aufzuteilen und von verschiedenen Prozessoren bearbeiten zu lassen. Was jedoch möglich ist, ist die bearbeitung des Problems für verschieden große Gleichungssysteme. Wenn gilt
+			\begin{equation*}
+				n = 10 \cdot 2^k +1
+			\end{equation*}
+			für $k=1,..,10$. Es ist also möglich für jedes $k$ dass Problem separat, und somit parallel, zu bearbeiten.
+			Hierfür können verschiedene Strategien verwendet werden. In diesem Fall wurde Pythons $threading$ Packet verwendet.\newline \newline
+			\begin{tabular}{c}
+			\begin{lstlisting}
+def multi_solve(k_limit, max_iter=10000, tol=1e-10):
+	start = time.time()
+	# listen initialisieren
+    n_list = [10 * (2**k) + 1 for k in range(1, k_limit+1, 1)]
+    thread_list = [None for _ in n_list]
+    line_space_list = [[] for _ in n_list]
+    ys_list = [0 for _ in n_list]
+    for n in n_list:
+    	# werte für solve initialisieren
+    	index = n_list.index(n)
+        h = length/(n+1)
+        ys_list[index] = [0 for _ in range(n)]
+        fs = [f() for _ in range(n)]
+        bs = list(map(lambda x: x * ((h**4) / (E*I)), fs))
+        line_space_list[index] = np.linspace(0, length, n+2)
+        # solve für aktuelle werte in neuem thread starten
+        thread_list[index] = thr.Thread(target=solve, 
+        								args=(ys_list[index], bs, max_iter, tol))
+        thread_list[index].start()
+
+    for thread in thread_list:
+        index = thread_list.index(thread)
+        # warten bis thread fertig ist
+        thread.join()
+        ys_list[index] = [0] + ys_list[index] + [0]
+        plt.plot(line_space_list[index], [-x for x in ys_list[index]])
+        error , error_index = compute_error(ys_list[index],
+         													compute_exact(line_space_list[index]))
+       	print('Max error: %s for k=%s: at index: %s of %s'%(error,
+       												 index+1, error_index, len(ys_list[index])-1))
+	end = time.time()
+    print("time needed in seconds: ", end - start)
+    plt.show()		
+	 	\end{lstlisting}
+		\end{tabular}
+		\newline \newline
+		Die Funktion $multi\_solve$	nimmt als Parameter ein oberes Limit für $k$ als auch wieder eine obere Grenze für die Anzahl der maximal Iterationen und eine Toleranz. Für jedes $k$ wird dabei ein neuer Thread gestartet. Anschließend wird durch $thread.join$ auf die beendigung eines jeden Trheads gewartet.
+		Allerdings hat diese Implementierung den Nachteil dass nicht darauf geachtet wird ob alle Verfügbaren Resourcen der Prozessoren genutz werden. Im Schnitt liegt die Auslastung auf einem üblichen Rechner bei 30\% bis 40\%.
+		Außerdem sollte beachtet werden dass der Speicherbedarf größer wird. Würde man statt Hart Kodierten Termen für die Berechnung der Lösung, normale Matrizen verwenden, so würde dass bei einem 4GB RAM Rechner zu Problemen führen.	
+		
+	\subsection{Auswertung}
+		In diesem Abschnitt sollen die numerische Ergebnisse untersucht und nach möglichkeit weiter begründet werden.
+		Für den Vergleich wird die Analytische Lösung des Problems einbezogen, welche gegeben ist durch
+		\begin{equation}
+			y(x) = \frac{fx^2(L-x)^2}{24EI}
+		\end{equation}
+		
+		\newpage
+		\subsubsection{Auswertung n = 10}
+			Zunächst soll dass Gleichungssystem einzeln für $n=10$ gelöst werden. Dafür wird die oben definierte
+		 	Funktion $solve$ mit den iterations Parametern $max\_iter=1000000$ und $tol=1e^{-6}$, für 6-Stellige genauigkeit, aufgerufen.
+		 	
+		 	\begin{figure}[H] 
+	 			\centering
+	 			\includegraphics[width=0.8\textwidth]{n_10.png}
+	 			\caption{Vergleich numerische und analytische Lösung}
+	 			\label{fig:Bild1}
+	 		\end{figure}
+	 		Für eine 6-Stellige Genauigkeit werden 561 iterationen benötigt. Dabei beträgt der Fehler, welcher in der Mitte des Balkens liegt, ca.
+	 		$8.75913330772e^{-5}$.
+	 	
+	 	\subsubsection{Auswertung für k's}
+	 		Nun werden die Gleichungssysteme mittels $multi\_solve$ gelöst. Zunächst werden dabei die iterations Parameter $max\_iter=10000$ und $tol=1e^{-6}$ verwendet. Die Auswertung liefert folgende Fehlertabelle für den Fehler in der Mitte des Balkens.	 		
+			\begin{table}[!h]
+				\centering
+				\begin{tabular}{c c c c}
+					\bf k & \bf Fehler\\
+					\hline
+					1	& 4.0104791661e-05 \\ 
+					2   & 0.0285147270488 \\
+					3	& 0.0467199915587 \\
+					4	& 0.0480244275509\\
+					5   & 0.0481081478527\\
+					6	& 0.0481135140356\\
+				\end{tabular}
+			\end{table}
+			Man kann erkennen dass bereits für relativ kleine $k$ der Fehler recht groß wird. Bereits ab $k=3$ ist dass Resultat für diegenutzen Parameter unbrauchbar. Der Grund hierfür liegt darin dass für große $n$ dass Verfahren nur sehr langsam konvergiert. Der Plot für $k=1..10$ verdeutlicht die Situation.
+		 	\begin{figure}[H] 
+	 			\centering
+	 			\includegraphics[width=0.9\textwidth]{ks.png}
+	 			\caption{Plots für k=1..10}
+	 			\label{fig:Bild2}
+	 		\end{figure}
+	 		Bereits ab $k=2$ kann man im Plot sehen dass das Resultat nicht zufriedenstellend ist, da der Fehler viel zu groß wird. Abhilfe verschaffen hierfür besser geeignete iterations Parameter. Die folgende Auswertung verwendet die Parameter $max\_iter=1000000$ und $TOL = 1e^{-100}$. Die Rechenzeit betrug dabei $t \approx 8h$
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c c c c}
+					\bf k & \bf Fehler\\
+					\hline
+					1	& 1.27883814649e-14 \\ 
+					2   & 1.7937734631e-13 \\
+					3	& 0.00121666321593 \\
+					4	& 0.0382262076262\\
+					5   & 0.0475469272666\\
+					6	& 0.0480776249649\\
+				\end{tabular}
+			\end{table}
+			\newpage
+			Es zeigt sich dass die Näherungen besser werden, jedoch bereits ab $k=4$ die Anzahl an iterationen mit $max\_iter=1000000$ zu niedrig angesetzt ist. Der Plot verdeutlicht dass selbst nach so langer rechenzeit, nicht merklich besser werden.	 		
+		 	\begin{figure}[H] 
+	 			\centering
+	 			\includegraphics[width=0.9\textwidth]{one_mill.png}
+	 			\caption{Plots mit max\_iter = 1000000}
+	 			\label{fig:Bild3}
+	 		\end{figure}
+	 		
+	 		Bereits für kleine k wird der Fehler in der Mitte des Balkens sehr schnell, sehr groß.
+	 		
+	 		\subsubsection{Fehlerbetrachtung}
+				Die Kondition sagt etwas darüber aus ob kleine störungen zu verstärkung des Fehlers über alle Grenzen führen. Wenn für den Konditionswert gilt $K(A) < 1$, so spricht man von
+				von eime gut Konditionierten (gut gestelltem) Problem. Für reguläre Matrizen lässt sich der Konditionswert abschätzen durch
+				\begin{equation}
+					K(A) = \norm{\norm{A}}\cdot\norm{\norm{A^{-1}}}.
+				\end{equation}
+				Hierfür muss jedoch gelten dass für beliebig große Gleichungssysteme die Matrix $A$ regulär ist (also vollen rang hat). Dies gilt genau dann wenn
+				\begin{equation*}
+					det(A) \neq 0.
+				\end{equation*}
+				\newpage
+				Begründen lässt sich dies wie bereits bei der Konvergenzuntersuchung. Da alle diagonalen, bis auf die Hauptdiagonale mindestens ein Null Element enthalten, kann
+				die Determinante wie folgt dargestellt werden
+				\begin{equation*}
+					12\cdot\prod_{i=1}^{n-1}6 \cdot 12.
+				\end{equation*}
+				Dieser Ausdruck ist immer größer als Null, somit ist $A$ für beliebige größen regulär. Also kann Gleichung (4) zur bestimmung der Kondition verwendet werden.
+				
+			\subsubsection{Konditionsbestimmung}
+				Die Kondition des Problems für verschiedene $k$ soll mithilfe von Python bestimmt werden. Hierfür werden die Funktionen $norm$ und $inv$ aus dem Paket $numpy.linalg$ verwendet.
+				Notwendigerweise werden nun die Matrizen tatsächlich konstruiert, dies geschieht mittels der Funktion $create\_matrix$ welches als Parameter die Dimension $n$ erwartet.\newline
+				\newline
+				\begin{tabular}{c}
+				\begin{lstlisting}
+def create_matrix(n):
+   	matrix = [[] for _ in range(n)]
+    matrix[0] = [12, -6, 4.0/3.0] + [0 for _ in range(n-3)]
+    matrix[1] = [-4, 6, -4, 1] + [0 for _ in range(n-4)]
+    matrix[n-2] = [0 for _ in range(n-4)] + [1, -4, 6, -4]
+    matrix[n-1] = [0 for _ in range(n-3)] + [4.0/3.0, -6, 12]
+    for j in range(2, n-2, 1):
+      matrix[j] = [0 for _ in range(j-2)] + [1, -4,  6, -4, 1] + [0 for _ in range(n-3-j)]
+    return matrix	
+	 			\end{lstlisting}
+				\end{tabular}
+				\newline \newline
+				Die so erzeugten Matrizen werden verwendet um mittels Gleichung (4) den Konditionswert für dass jeweilige Gleichungssystem zu bestimmen.
+				Zur berechnung der Konditionswerte wird die Funktion $compute\_conditions$ verwendet, welche ein oberes Limit für den Wert $k$ bekommt.
+				Als Resultat wird eine Liste mit den entsprechhenden Konditionswerten zurückgeliefert. \newline \newline
+				\begin{tabular}{c}
+				\begin{lstlisting}
+				def compute_conditions(k_limit):
+    				n_list = [10 * (2**k) + 1 for k in range(1, k_limit+1, 1)]
+    				cond_list = [0 for _ in n_list]
+    				for n in n_list:
+        				index = n_list.index(n)
+       					matrix = create_matrix(n)
+        				inverse_matrix = nplin.inv(matrix)
+        				matrix_norm = nplin.norm(matrix)
+        				inverse_matrix_norm = nplin.norm(inverse_matrix)
+        				cond_list[index] = matrix_norm*inverse_matrix_norm
+    				return cond_list
+				\end{lstlisting}
+				\end{tabular}
+				\newline \newline
+				Die Funktion bildet zu jeder Matrix die Inverse und bestimmt die jeweiligen Normen.
+				\newpage
+				Ein Plot der die Kondition zu jedem Wert für k darstellt, verdeutlicht dass verhalten.
+				\begin{figure}[H] 
+					 \centering
+					 \includegraphics[width=0.9\textwidth]{conds.png}
+					 \caption{Plots mit Konditionen}
+					 \label{fig:Bild4}
+				\end{figure}
+				
+\section{Belasteter Balken}
+
+	Nun soll der aufliegende Balken zwischen $x=3$ und $x=4$ zusätzlich mit 500$kg$ belastet werden.
+	Da die angreifende Kraft bereits als eine Liste in den algorithmen implementiert wurde ist es bereits aussreichend die rechte seite vor
+	dem Ausführen der Routinen anzupassen. Hierfür wird die Funcktion $apply\_weight\_to\_f$ verwended. Diese erhält als Argumente die Liste mit
+	den standartmäßig wirkenden Kräften $fs$, als auch eine Schrittweite $h$. Für jedes Element dessen tatsächliche Position zwischen $x=3$ und $x=4$ liegt
+	wird die Zusätzliche belastung von 500$kg$ dazu addiert. \newline \newline
+	\begin{tabular}{c}
+	\begin{lstlisting}
+		def apply_weight_to_f(fs, h):
+    		for i in range(len(fs)):
+        		if 3 <= h*i <= 4:
+            		fs[i] += 500
+	\end{lstlisting}
+	\end{tabular}
+	\newline \newline
+	Die Funktion hat keinen Rückgabewert da sie den Zustand der Liste selbst verändert.	
+	
+	\subsection{Auswertung}
+		Da nun keine exakte Lösung vorhanden ist an der ein Fehler gemessen werden kann, wird in diesem Teil darauf Verzichtet.
+		Stattdessen wird die verschiebung der maximalen Auslenkung untersucht. Hierfür wird die Routine $multi\_solve$ mit angepasster rechter Seite
+		ausgeführt. Diesmal werden jedoch die Parameter $max_iter=100000$ und $tol=1e^{-18}$ verwendet.
+		
+		\subsubsection{Auswertung n = 10}
+			Der Vergleich der beiden Numerischen lösungen, einmal mit angepasster Seite und einmal ohne, liefert folgenden Plot.
+			
+		\begin{figure}[H] 
+	 		\centering
+	 		\includegraphics[width=0.9\textwidth]{bend.png}
+	 		\caption{Plots mit max\_iter = 1000000}
+	 		\label{fig:Bild5}
+	 	\end{figure}
+	 	
+	 	Es ist erkenntlich, dass der Punkt der größten Auslenkung für $n = 10$ sich nicht verändert hatt, jedoch der Betrag der Auslenkung gewachsen ist.
+	 	Deutlicher wird die linksverschiebung der größten Auslenkung für größere $n$.
+	 	\newpage
+	 	\subsubsection{Auswertung für k's}
+	 		Dieses mal werden nur $k<=5$ ausgewertet um die berechnungen in einem Zeitlichen Rahmen halten zu können. Für die Konvergenzgeschwindigkeit spielt die rechte Seite, 
+	 		in diesem Fall, eine untergeordnete Rolle. Somit ist nicht zu erwarten dass die Resultate diesmal besser, oder schneller sind. Die berechnungen werden mit einer
+	 		angepassten $multi\_solve$ Funktion durchgeführt (nur anpassung bezüglich der Ausgabe, keine Algorithmischen).
 
 
-\Section{Herleitung der Diskretisierung}
+\section{Herleitung der Diskretisierung}
 
-\Section{Eingespannter Balken}
+\section{Eingespannter Balken}
 
-\Section{Vergleich der Tragfähigkeit}
+\section{Vergleich der Tragfhigkeit}
 
-\Section{SOR-Verfahren}
+\section{SOR-Verfahren}
 
-\Section{cg-Verfahren}
+\section{cg-Verfahren}
 
 \newpage
 \bibliography{literatur}

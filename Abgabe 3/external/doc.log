@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.25)  26 MAY 2016 21:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.25)  29 MAY 2016 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,26 +359,57 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count137
 \c@blind@pangrammax=\count138
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count139
+\calc@Bcount=\count140
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count141
+\calc@Cskip=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count142
+\l_MT_multwidth_dim=\dimen158
+\origjot=\skip61
+\l_MT_shortvdotswithinadjustabove_dim=\dimen159
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen160
+\l_MT_above_intertext_sep=\dimen161
+\l_MT_below_intertext_sep=\dimen162
+\l_MT_above_shortintertext_sep=\dimen163
+\l_MT_below_shortintertext_sep=\dimen164
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package color Info: Redefining color red on input line 69.
+Package color Info: Redefining color red on input line 76.
  (./doc.aux)
 \openout1 = `doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 80.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -422,16 +453,16 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
-\scratchdimen=\dimen156
+\scratchcounter=\count143
+\scratchdimen=\dimen165
 \scratchbox=\box33
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\nofMPsegments=\count144
+\nofMParguments=\count145
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count142
-\MPscratchDim=\dimen157
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen166
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -477,33 +508,33 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count145
+\c@lstlisting=\count149
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 75.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 82.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 75.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 82.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 75.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 82.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 75.
+(Font)              <14.4> on input line 82.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 75.
+(Font)              <10> on input line 82.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 75.
+(Font)              <7> on input line 82.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/usr/share/texlive/texmf-
@@ -511,27 +542,27 @@ dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 80.
+(Font)              <12> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 80.
+(Font)              <8> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 80.
+(Font)              <6> on input line 87.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 100.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 107.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 100.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 107.
 
 <hmlogo.png, id=8, 803.0pt x 348.30125pt>
 File: hmlogo.png Graphic file (type png)
  <use hmlogo.png>
-Package pdftex.def Info: hmlogo.png used on input line 137.
+Package pdftex.def Info: hmlogo.png used on input line 144.
 (pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
 
 
@@ -541,42 +572,3033 @@ Package Fancyhdr Warning: \headheight is too small (40.15015pt):
  This may cause the page layout to be inconsistent, however.
 
 [1 <./hmlogo.png>]
-File: hmlogo.png Graphic file (type png)
- <use hmlogo.png>
-Package pdftex.def Info: hmlogo.png used on input line 159.
-(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
- [2]
-No file doc.bbl.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 166
+.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 167.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 165.
+Underfull \hbox (badness 10000) in paragraph at lines 159--190
+
+ []
 
 File: hmlogo.png Graphic file (type png)
 <use hmlogo.png>
-Package pdftex.def Info: hmlogo.png used on input line 167.
+Package pdftex.def Info: hmlogo.png used on input line 190.
 (pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
- [3] (./doc.aux) ) 
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+Underfull \hbox (badness 10000) in paragraph at lines 197--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--216
+
+ []
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.222 ... selbst ist nicht parallelisierbar, da f√
+                                                  ºr die aktuelle Berechnung...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...selbst ist nicht parallelisierbar, da f√º
+                                                  r die aktuelle Berechnung ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.222 ...rechnung immer die aktuellsten Werte ben√
+                                                  ∂tigt werden. Dass macht e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...echnung immer die aktuellsten Werte ben√∂
+                                                  tigt werden. Dass macht es...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.222 ...erte ben√∂tigt werden. Dass macht es unm√
+                                                  ∂glich die dass Problem au...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...rte ben√∂tigt werden. Dass macht es unm√∂
+                                                  glich die dass Problem auf...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.222 ...soren bearbeiten zu lassen. Was jedoch m√
+                                                  ∂glich ist, ist die bearbe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...oren bearbeiten zu lassen. Was jedoch m√∂
+                                                  glich ist, ist die bearbei...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.222 ... ist, ist die bearbeitung des Problems f√
+                                                  ºr verschieden gro√üe Glei...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...ist, ist die bearbeitung des Problems f√º
+                                                  r verschieden gro√üe Gleic...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.222 ...eitung des Problems f√ºr verschieden gro√
+                                                  üe Gleichungssysteme. Wenn...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...itung des Problems f√ºr verschieden gro√ü
+                                                  e Gleichungssysteme. Wenn ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.226 			f√
+           ºr $k=1,..,10$. Es ist also m√∂glich f√ºr jedes $k$ dass Problem ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 			f√º
+            r $k=1,..,10$. Es ist also m√∂glich f√ºr jedes $k$ dass Problem ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.226 			f√ºr $k=1,..,10$. Es ist also m√
+                                         ∂glich f√ºr jedes $k$ dass Problem ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 			f√ºr $k=1,..,10$. Es ist also m√∂
+                                          glich f√ºr jedes $k$ dass Problem ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.226 			f√ºr $k=1,..,10$. Es ist also m√∂glich f√
+                                                  ºr jedes $k$ dass Problem ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...√ºr $k=1,..,10$. Es ist also m√∂glich f√º
+                                                  r jedes $k$ dass Problem s...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.227 			Hierf√
+               ºr k√∂nnen verschiedene Strategien verwendet werden. In diese...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 			Hierf√º
+                r k√∂nnen verschiedene Strategien verwendet werden. In diese...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.227 			Hierf√ºr k√
+                    ∂nnen verschiedene Strategien verwendet werden. In diese...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 			Hierf√ºr k√∂
+                     nnen verschiedene Strategien verwendet werden. In diese...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+
+! Package inputenc Error: Unicode char \u8:√\expandafter not set up for use wit
+h LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238     	# werte f√ºr 
+                        solve initialisieren
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238     	# werte f√ºr 
+                        solve initialisieren
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char \u8:√\expandafter not set up for use wit
+h LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.245         # solve f√ºr 
+                           aktuelle werte in neuem thread starten
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.245         # solve f√ºr 
+                           aktuelle werte in neuem thread starten
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.266 ...$	nimmt als Parameter ein oberes Limit f√
+                                                  ºr $k$ als auch wieder ein...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...	nimmt als Parameter ein oberes Limit f√º
+                                                  r $k$ als auch wieder eine...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.266 ... $k$ als auch wieder eine obere Grenze f√
+                                                  ºr die Anzahl der maximal ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...$k$ als auch wieder eine obere Grenze f√º
+                                                  r die Anzahl der maximal I...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.266 ...maximal Iterationen und eine Toleranz. F√
+                                                  ºr jedes $k$ wird dabei ei...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...aximal Iterationen und eine Toleranz. F√º
+                                                  r jedes $k$ wird dabei ein...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.266 ...bei ein neuer Thread gestartet. Anschlie√
+                                                  üend wird durch $thread.jo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...ei ein neuer Thread gestartet. Anschlie√ü
+                                                  end wird durch $thread.joi...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.267 ... nicht darauf geachtet wird ob alle Verf√
+                                                  ºgbaren Resourcen der Proz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 ...nicht darauf geachtet wird ob alle Verf√º
+                                                  gbaren Resourcen der Proze...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.267 ... Schnitt liegt die Auslastung auf einem √
+                                                  ºblichen Rechner bei 30\% ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 ...Schnitt liegt die Auslastung auf einem √º
+                                                  blichen Rechner bei 30\% b...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 		Au√
+           üerdem sollte beachtet werden dass der Speicherbedarf gr√∂√üer wi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 		Au√ü
+            erdem sollte beachtet werden dass der Speicherbedarf gr√∂√üer wi...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...achtet werden dass der Speicherbedarf gr√
+                                                  ∂√üer wird. W√ºrde man sta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...chtet werden dass der Speicherbedarf gr√∂
+                                                  √üer wird. W√ºrde man stat...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...htet werden dass der Speicherbedarf gr√∂√
+                                                  üer wird. W√ºrde man statt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...tet werden dass der Speicherbedarf gr√∂√ü
+                                                  er wird. W√ºrde man statt ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...dass der Speicherbedarf gr√∂√üer wird. W√
+                                                  ºrde man statt Hart Kodier...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...ass der Speicherbedarf gr√∂√üer wird. W√º
+                                                  rde man statt Hart Kodiert...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...W√ºrde man statt Hart Kodierten Termen f√
+                                                  ºr die Berechnung der L√∂s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...√ºrde man statt Hart Kodierten Termen f√º
+                                                  r die Berechnung der L√∂su...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...dierten Termen f√ºr die Berechnung der L√
+                                                  ∂sung, normale Matrizen ve...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...ierten Termen f√ºr die Berechnung der L√∂
+                                                  sung, normale Matrizen ver...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...√∂sung, normale Matrizen verwenden, so w√
+                                                  ºrde dass bei einem 4GB RA...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...∂sung, normale Matrizen verwenden, so w√º
+                                                  rde dass bei einem 4GB RAM...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.268 ...bei einem 4GB RAM Rechner zu Problemen f√
+                                                  ºhren.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...ei einem 4GB RAM Rechner zu Problemen f√º
+                                                  hren.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--269
+
+ []
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 269.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.271 ...erische Ergebnisse untersucht und nach m√
+                                                  ∂glichkeit weiter begr√ºnd...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 ...rische Ergebnisse untersucht und nach m√∂
+                                                  glichkeit weiter begr√ºnde...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.271 ...rsucht und nach m√∂glichkeit weiter begr√
+                                                  ºndet werden.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 ...sucht und nach m√∂glichkeit weiter begr√º
+                                                  ndet werden.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.272 		F√
+          ºr den Vergleich wird die Analytische L√∂sung des Problems einbezo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 		F√º
+           r den Vergleich wird die Analytische L√∂sung des Problems einbezo...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.272 		F√ºr den Vergleich wird die Analytische L√
+                                                  ∂sung des Problems einbezo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.272 ...ºr den Vergleich wird die Analytische L√∂
+                                                  sung des Problems einbezog...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 277.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.279 			Zun√
+             §chst soll dass Gleichungssystem einzeln f√ºr $n=10$ gel√∂st we...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 			Zun√§
+              chst soll dass Gleichungssystem einzeln f√ºr $n=10$ gel√∂st we...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.279 ...hst soll dass Gleichungssystem einzeln f√
+                                                  ºr $n=10$ gel√∂st werden. ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...st soll dass Gleichungssystem einzeln f√º
+                                                  r $n=10$ gel√∂st werden. D...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.279 ...Gleichungssystem einzeln f√ºr $n=10$ gel√
+                                                  ∂st werden. Daf√ºr wird di...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...leichungssystem einzeln f√ºr $n=10$ gel√∂
+                                                  st werden. Daf√ºr wird die...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.279 ... einzeln f√ºr $n=10$ gel√∂st werden. Daf√
+                                                  ºr wird die oben definierte
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...einzeln f√ºr $n=10$ gel√∂st werden. Daf√º
+                                                  r wird die oben definierte
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.280 ...$max\_iter=1000000$ und $tol=1e^{-6}$, f√
+                                                  ºr 6-Stellige genauigkeit,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 ...max\_iter=1000000$ und $tol=1e^{-6}$, f√º
+                                                  r 6-Stellige genauigkeit, ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+<n_10.png, id=33, 578.16pt x 433.62pt>
+File: n_10.png Graphic file (type png)
+ <use n_10.png>
+Package pdftex.def Info: n_10.png used on input line 284.
+(pdftex.def)             Requested size: 364.19667pt x 273.14235pt.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.285 ...leich numerische und analytische L√∂sung}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.285 ...leich numerische und analytische L√∂sung}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...leich numerische und analytische L√∂sung}
+                                                  
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.285 ...leich numerische und analytische L√∂sung}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...leich numerische und analytische L√∂sung}
+                                                  
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.288 	 		F√
+            ºr eine 6-Stellige Genauigkeit werden 561 iterationen ben√∂tigt....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 	 		F√º
+             r eine 6-Stellige Genauigkeit werden 561 iterationen ben√∂tigt....
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.288 ...e Genauigkeit werden 561 iterationen ben√
+                                                  ∂tigt. Dabei betr√§gt der ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 ... Genauigkeit werden 561 iterationen ben√∂
+                                                  tigt. Dabei betr√§gt der F...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.288 ...en 561 iterationen ben√∂tigt. Dabei betr√
+                                                  §gt der Fehler, welcher in...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 ...n 561 iterationen ben√∂tigt. Dabei betr√§
+                                                  gt der Fehler, welcher in ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.291 	 	\subsubsection{Auswertung f√ºr k's}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.291 	 	\subsubsection{Auswertung f√ºr k's}
+                                            
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.291 	 	\subsubsection{Auswertung f√ºr k's}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.292 ...chungssysteme mittels $multi\_solve$ gel√
+                                                  ∂st. Zun√§chst werden dabe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 ...hungssysteme mittels $multi\_solve$ gel√∂
+                                                  st. Zun√§chst werden dabei...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.292 ...teme mittels $multi\_solve$ gel√∂st. Zun√
+                                                  §chst werden dabei die ite...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 ...eme mittels $multi\_solve$ gel√∂st. Zun√§
+                                                  chst werden dabei die iter...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.292 ...wertung liefert folgende Fehlertabelle f√
+                                                  ºr den Fehler in der Mitte...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 ...ertung liefert folgende Fehlertabelle f√º
+                                                  r den Fehler in der Mitte ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 			Man kann erkennen dass bereits f√
+                                          ºr relativ kleine $k$ der Fehler r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 			Man kann erkennen dass bereits f√º
+                                           r relativ kleine $k$ der Fehler r...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 ... relativ kleine $k$ der Fehler recht gro√
+                                                  ü wird. Bereits ab $k=3$ i...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...relativ kleine $k$ der Fehler recht gro√ü
+                                                   wird. Bereits ab $k=3$ is...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 ...rd. Bereits ab $k=3$ ist dass Resultat f√
+                                                  ºr diegenutzen Parameter u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...d. Bereits ab $k=3$ ist dass Resultat f√º
+                                                  r diegenutzen Parameter un...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 ...n Parameter unbrauchbar. Der Grund hierf√
+                                                  ºr liegt darin dass f√ºr g...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ... Parameter unbrauchbar. Der Grund hierf√º
+                                                  r liegt darin dass f√ºr gr...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 ...r. Der Grund hierf√ºr liegt darin dass f√
+                                                  ºr gro√üe $n$ dass Verfahr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 .... Der Grund hierf√ºr liegt darin dass f√º
+                                                  r gro√üe $n$ dass Verfahre...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 ...Grund hierf√ºr liegt darin dass f√ºr gro√
+                                                  üe $n$ dass Verfahren nur ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...rund hierf√ºr liegt darin dass f√ºr gro√ü
+                                                  e $n$ dass Verfahren nur s...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.306 ...nur sehr langsam konvergiert. Der Plot f√
+                                                  ºr $k=1..10$ verdeutlicht ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...ur sehr langsam konvergiert. Der Plot f√º
+                                                  r $k=1..10$ verdeutlicht d...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+<ks.png, id=34, 578.16pt x 433.62pt>
+File: ks.png Graphic file (type png)
+ <use ks.png>
+Package pdftex.def Info: ks.png used on input line 309.
+(pdftex.def)             Requested size: 409.71692pt x 307.28348pt.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.310 	 			\caption{Plots f√ºr k=1..10}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.310 	 			\caption{Plots f√ºr k=1..10}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 	 			\caption{Plots f√ºr k=1..10}
+                                       
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.310 	 			\caption{Plots f√ºr k=1..10}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 	 			\caption{Plots f√ºr k=1..10}
+                                       
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 312.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./n_10.png>]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.313 ...nstellend ist, da der Fehler viel zu gro√
+                                                  ü wird. Abhilfe verschaffe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...stellend ist, da der Fehler viel zu gro√ü
+                                                   wird. Abhilfe verschaffen...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.313 ...zu gro√ü wird. Abhilfe verschaffen hierf√
+                                                  ºr besser geeignete iterat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...u gro√ü wird. Abhilfe verschaffen hierf√º
+                                                  r besser geeignete iterati...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 327.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./ks.png>]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.328 			Es zeigt sich dass die N√
+                                  §herungen besser werden, jedoch bereits ab...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 			Es zeigt sich dass die N√§
+                                   herungen besser werden, jedoch bereits ab...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+<one_mill.png, id=44, 578.16pt x 433.62pt>
+File: one_mill.png Graphic file (type png)
+ <use one_mill.png>
+Package pdftex.def Info: one_mill.png used on input line 331.
+(pdftex.def)             Requested size: 409.71692pt x 307.28348pt.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.336 	 		Bereits f√
+                    ºr kleine k wird der Fehler in der Mitte des Balkens seh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 	 		Bereits f√º
+                     r kleine k wird der Fehler in der Mitte des Balkens seh...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.336 ...Mitte des Balkens sehr schnell, sehr gro√
+                                                  ü.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 ...itte des Balkens sehr schnell, sehr gro√ü
+                                                  .
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.339 				Die Kondition sagt etwas dar√
+                                       ºber aus ob kleine st√∂rungen zu vers...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 				Die Kondition sagt etwas dar√º
+                                        ber aus ob kleine st√∂rungen zu vers...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.339 ...ion sagt etwas dar√ºber aus ob kleine st√
+                                                  ∂rungen zu verst√§rkung de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 ...on sagt etwas dar√ºber aus ob kleine st√∂
+                                                  rungen zu verst√§rkung des...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.339 ...r√ºber aus ob kleine st√∂rungen zu verst√
+                                                  §rkung des Fehlers √ºber a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 ...√ºber aus ob kleine st√∂rungen zu verst√§
+                                                  rkung des Fehlers √ºber al...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.339 ... st√∂rungen zu verst√§rkung des Fehlers √
+                                                  ºber alle Grenzen f√ºhren....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 ...st√∂rungen zu verst√§rkung des Fehlers √º
+                                                  ber alle Grenzen f√ºhren. ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.339 ...√§rkung des Fehlers √ºber alle Grenzen f√
+                                                  ºhren. Wenn f√ºr den Kondi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 ...§rkung des Fehlers √ºber alle Grenzen f√º
+                                                  hren. Wenn f√ºr den Kondit...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.339 ...hlers √ºber alle Grenzen f√ºhren. Wenn f√
+                                                  ºr den Konditionswert gilt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 ...lers √ºber alle Grenzen f√ºhren. Wenn f√º
+                                                  r den Konditionswert gilt ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.340 ...ditionierten (gut gestelltem) Problem. F√
+                                                  ºr regul√§re Matrizen l√§s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 ...itionierten (gut gestelltem) Problem. F√º
+                                                  r regul√§re Matrizen l√§ss...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.340 ...ten (gut gestelltem) Problem. F√ºr regul√
+                                                  §re Matrizen l√§sst sich d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 ...en (gut gestelltem) Problem. F√ºr regul√§
+                                                  re Matrizen l√§sst sich de...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.340 ...ltem) Problem. F√ºr regul√§re Matrizen l√
+                                                  §sst sich der Konditionswe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 ...tem) Problem. F√ºr regul√§re Matrizen l√§
+                                                  sst sich der Konditionswer...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.340 ...zen l√§sst sich der Konditionswert absch√
+                                                  §tzen durch
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 ...en l√§sst sich der Konditionswert absch√§
+                                                  tzen durch
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.344 				Hierf√
+                ºr muss jedoch gelten dass f√ºr beliebig gro√üe Gleichungssy...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344 				Hierf√º
+                 r muss jedoch gelten dass f√ºr beliebig gro√üe Gleichungssy...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.344 				Hierf√ºr muss jedoch gelten dass f√
+                                             ºr beliebig gro√üe Gleichungssy...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344 				Hierf√ºr muss jedoch gelten dass f√º
+                                              r beliebig gro√üe Gleichungssy...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.344 ...uss jedoch gelten dass f√ºr beliebig gro√
+                                                  üe Gleichungssysteme die M...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344 ...ss jedoch gelten dass f√ºr beliebig gro√ü
+                                                  e Gleichungssysteme die Ma...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.344 ...e Gleichungssysteme die Matrix $A$ regul√
+                                                  §r ist (also vollen rang h...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.344 ... Gleichungssysteme die Matrix $A$ regul√§
+                                                  r ist (also vollen rang ha...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 348.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./one_mill.png>]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.349 				Begr√
+               ºnden l√§sst sich dies wie bereits bei der Konvergenzuntersuc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 				Begr√º
+                nden l√§sst sich dies wie bereits bei der Konvergenzuntersuc...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.349 				Begr√ºnden l√
+                       §sst sich dies wie bereits bei der Konvergenzuntersuc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 				Begr√ºnden l√§
+                        sst sich dies wie bereits bei der Konvergenzuntersuc...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.354 				Dieser Ausdruck ist immer gr√
+                                       ∂√üer als Null, somit ist $A$ f√ºr be...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 				Dieser Ausdruck ist immer gr√∂
+                                        √üer als Null, somit ist $A$ f√ºr be...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.354 				Dieser Ausdruck ist immer gr√∂√
+                                         üer als Null, somit ist $A$ f√ºr be...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 				Dieser Ausdruck ist immer gr√∂√ü
+                                          er als Null, somit ist $A$ f√ºr be...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.354 ...immer gr√∂√üer als Null, somit ist $A$ f√
+                                                  ºr beliebige gr√∂√üen regu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 ...mmer gr√∂√üer als Null, somit ist $A$ f√º
+                                                  r beliebige gr√∂√üen regul...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.354 ...ls Null, somit ist $A$ f√ºr beliebige gr√
+                                                  ∂√üen regul√§r. Also kann ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 ...s Null, somit ist $A$ f√ºr beliebige gr√∂
+                                                  √üen regul√§r. Also kann G...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.354 ... Null, somit ist $A$ f√ºr beliebige gr√∂√
+                                                  üen regul√§r. Also kann Gl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 ...Null, somit ist $A$ f√ºr beliebige gr√∂√ü
+                                                  en regul√§r. Also kann Gle...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.354 ...it ist $A$ f√ºr beliebige gr√∂√üen regul√
+                                                  §r. Also kann Gleichung (4...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 ...t ist $A$ f√ºr beliebige gr√∂√üen regul√§
+                                                  r. Also kann Gleichung (4)...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.357 				Die Kondition des Problems f√
+                                       ºr verschiedene $k$ soll mithilfe von...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.357 				Die Kondition des Problems f√º
+                                        r verschiedene $k$ soll mithilfe von...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.357 ...thilfe von Python bestimmt werden. Hierf√
+                                                  ºr werden die Funktionen $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.357 ...hilfe von Python bestimmt werden. Hierf√º
+                                                  r werden die Funktionen $n...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.358 ...ndigerweise werden nun die Matrizen tats√
+                                                  §chlich konstruiert, dies ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.358 ...digerweise werden nun die Matrizen tats√§
+                                                  chlich konstruiert, dies g...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+Overfull \hbox (3.76056pt too wide) in paragraph at lines 369--370
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.374 ...ttels Gleichung (4) den Konditionswert f√
+                                                  ºr dass jeweilige Gleichun...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 ...tels Gleichung (4) den Konditionswert f√º
+                                                  r dass jeweilige Gleichung...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.375 ...ns$ verwendet, welche ein oberes Limit f√
+                                                  ºr den Wert $k$ bekommt.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 ...s$ verwendet, welche ein oberes Limit f√º
+                                                  r den Wert $k$ bekommt.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.376 ...den entsprechhenden Konditionswerten zur√
+                                                  ºckgeliefert. \newline \ne...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...en entsprechhenden Konditionswerten zur√º
+                                                  ckgeliefert. \newline \new...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+Underfull \hbox (badness 10000) in paragraph at lines 357--394
+
+ []
+
+
+Overfull \hbox (15.76056pt too wide) in paragraph at lines 357--394
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--394
+
+ []
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 394.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.395 ...n Plot der die Kondition zu jedem Wert f√
+                                                  ºr k darstellt, verdeutlic...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.395 ... Plot der die Kondition zu jedem Wert f√º
+                                                  r k darstellt, verdeutlich...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+<conds.png, id=52, 578.16pt x 433.62pt>
+File: conds.png Graphic file (type png)
+ <use conds.png>
+Package pdftex.def Info: conds.png used on input line 398.
+(pdftex.def)             Requested size: 409.71692pt x 307.28348pt.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.405 ...ende Balken zwischen $x=3$ und $x=4$ zus√
+                                                  §tzlich mit 500$kg$ belast...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.405 ...nde Balken zwischen $x=3$ und $x=4$ zus√§
+                                                  tzlich mit 500$kg$ belaste...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.407 	dem Ausf√
+                ºhren der Routinen anzupassen. Hierf√ºr wird die Funcktion $...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 	dem Ausf√º
+                 hren der Routinen anzupassen. Hierf√ºr wird die Funcktion $...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.407 ...usf√ºhren der Routinen anzupassen. Hierf√
+                                                  ºr wird die Funcktion $app...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 ...sf√ºhren der Routinen anzupassen. Hierf√º
+                                                  r wird die Funcktion $appl...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.407 ...ply\_weight\_to\_f$ verwended. Diese erh√
+                                                  §lt als Argumente die List...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 ...ly\_weight\_to\_f$ verwended. Diese erh√§
+                                                  lt als Argumente die Liste...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.408 	den standartm√
+                     §√üig wirkenden Kr√§ften $fs$, als auch eine Schrittwei...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 	den standartm√§
+                      √üig wirkenden Kr√§ften $fs$, als auch eine Schrittwei...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.408 	den standartm√§√
+                       üig wirkenden Kr√§ften $fs$, als auch eine Schrittwei...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 	den standartm√§√ü
+                        ig wirkenden Kr√§ften $fs$, als auch eine Schrittwei...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.408 	den standartm√§√üig wirkenden Kr√
+                                        §ften $fs$, als auch eine Schrittwei...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 	den standartm√§√üig wirkenden Kr√§
+                                         ften $fs$, als auch eine Schrittwei...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.408 ... $fs$, als auch eine Schrittweite $h$. F√
+                                                  ºr jedes Element dessen ta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...$fs$, als auch eine Schrittweite $h$. F√º
+                                                  r jedes Element dessen tat...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.408 ...eite $h$. F√ºr jedes Element dessen tats√
+                                                  §chliche Position zwischen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...ite $h$. F√ºr jedes Element dessen tats√§
+                                                  chliche Position zwischen ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.409 	wird die Zus√
+                    §tzliche belastung von 500$kg$ dazu addiert. \newline \n...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 	wird die Zus√§
+                     tzliche belastung von 500$kg$ dazu addiert. \newline \n...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.419 	Die Funktion hat keinen R√
+                                 ºckgabewert da sie den Zustand der Liste se...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.419 	Die Funktion hat keinen R√º
+                                  ckgabewert da sie den Zustand der Liste se...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.419 ... da sie den Zustand der Liste selbst ver√
+                                                  §ndert.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.419 ...da sie den Zustand der Liste selbst ver√§
+                                                  ndert.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--420
+
+ []
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.422 		Da nun keine exakte L√
+                              ∂sung vorhanden ist an der ein Fehler gemessen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.422 		Da nun keine exakte L√∂
+                               sung vorhanden ist an der ein Fehler gemessen...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.423 ...r maximalen Auslenkung untersucht. Hierf√
+                                                  ºr wird die Routine $multi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.423 ... maximalen Auslenkung untersucht. Hierf√º
+                                                  r wird die Routine $multi\...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.424 		ausgef√
+               ºhrt. Diesmal werden jedoch die Parameter $max_iter=100000$ u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.424 		ausgef√º
+                hrt. Diesmal werden jedoch die Parameter $max_iter=100000$ u...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 425.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./conds.png>]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.427 			Der Vergleich der beiden Numerischen l√
+                                                ∂sungen, einmal mit angepass...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.427 			Der Vergleich der beiden Numerischen l√∂
+                                                 sungen, einmal mit angepass...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+<bend.png, id=57, 578.16pt x 433.62pt>
+File: bend.png Graphic file (type png)
+ <use bend.png>
+Package pdftex.def Info: bend.png used on input line 431.
+(pdftex.def)             Requested size: 409.71692pt x 307.28348pt.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.436 ...s ist erkenntlich, dass der Punkt der gr√
+                                                  ∂√üten Auslenkung f√ºr $n ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 ... ist erkenntlich, dass der Punkt der gr√∂
+                                                  √üten Auslenkung f√ºr $n =...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.436 ...ist erkenntlich, dass der Punkt der gr√∂√
+                                                  üten Auslenkung f√ºr $n = ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 ...st erkenntlich, dass der Punkt der gr√∂√ü
+                                                  ten Auslenkung f√ºr $n = 1...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.436 ...ass der Punkt der gr√∂√üten Auslenkung f√
+                                                  ºr $n = 10$ sich nicht ver...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 ...ss der Punkt der gr√∂√üten Auslenkung f√º
+                                                  r $n = 10$ sich nicht ver√...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.436 ... Auslenkung f√ºr $n = 10$ sich nicht ver√
+                                                  §ndert hatt, jedoch der Be...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 ...Auslenkung f√ºr $n = 10$ sich nicht ver√§
+                                                  ndert hatt, jedoch der Bet...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.437 ...licher wird die linksverschiebung der gr√
+                                                  ∂√üten Auslenkung f√ºr gr√...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...icher wird die linksverschiebung der gr√∂
+                                                  √üten Auslenkung f√ºr gr√∂...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.437 ...cher wird die linksverschiebung der gr√∂√
+                                                  üten Auslenkung f√ºr gr√∂√...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...her wird die linksverschiebung der gr√∂√ü
+                                                  ten Auslenkung f√ºr gr√∂√ü...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.437 ...sverschiebung der gr√∂√üten Auslenkung f√
+                                                  ºr gr√∂√üere $n$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...verschiebung der gr√∂√üten Auslenkung f√º
+                                                  r gr√∂√üere $n$.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.437 ...hiebung der gr√∂√üten Auslenkung f√ºr gr√
+                                                  ∂√üere $n$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...iebung der gr√∂√üten Auslenkung f√ºr gr√∂
+                                                  √üere $n$.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.437 ...ebung der gr√∂√üten Auslenkung f√ºr gr√∂√
+                                                  üere $n$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character159appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...bung der gr√∂√üten Auslenkung f√ºr gr√∂√ü
+                                                  ere $n$.
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 438.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./bend.png>]
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.439 	 	\subsubsection{Auswertung f√ºr k's}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.439 	 	\subsubsection{Auswertung f√ºr k's}
+                                            
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.439 	 	\subsubsection{Auswertung f√ºr k's}
+                                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.440 ...n in einem Zeitlichen Rahmen halten zu k√
+                                                  ∂nnen. F√ºr die Konvergenz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character182appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.440 ... in einem Zeitlichen Rahmen halten zu k√∂
+                                                  nnen. F√ºr die Konvergenzg...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.440 ...m Zeitlichen Rahmen halten zu k√∂nnen. F√
+                                                  ºr die Konvergenzgeschwind...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.440 ... Zeitlichen Rahmen halten zu k√∂nnen. F√º
+                                                  r die Konvergenzgeschwindi...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.442 ...passten $multi\_solve$ Funktion durchgef√
+                                                  ºhrt (nur anpassung bez√ºg...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442 ...assten $multi\_solve$ Funktion durchgef√º
+                                                  hrt (nur anpassung bez√ºgl...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.442 ...unktion durchgef√ºhrt (nur anpassung bez√
+                                                  ºglich der Ausgabe, keine ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character188appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442 ...nktion durchgef√ºhrt (nur anpassung bez√º
+                                                  glich der Ausgabe, keine A...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 455.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+No file doc.bbl.
+
+LaTeX Warning: Empty `thebibliography' environment on input line 461.
+
+File: hmlogo.png Graphic file (type png)
+<use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 463.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] (./doc.aux) ) 
 Here is how much of TeX's memory you used:
- 7859 strings out of 494976
- 112077 string characters out of 6179137
- 208599 words of memory out of 5000000
- 10939 multiletter control sequences out of 15000+600000
- 46450 words of font info for 41 fonts, out of 8000000 for 9000
+ 8962 strings out of 494976
+ 127261 string characters out of 6179137
+ 257902 words of memory out of 5000000
+ 12009 multiletter control sequences out of 15000+600000
+ 47073 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,16n,43p,330b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/f
-onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-msy8.pfb>
-Output written on doc.pdf (4 pages, 185435 bytes).
+ 38i,16n,43p,371b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/
+texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fon
+ts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb
+>
+Output written on doc.pdf (13 pages, 447398 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

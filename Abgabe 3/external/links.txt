@@ -1,2 +1,15 @@
 http://www.math.uni-hamburg.de/home/hofmann/lehrveranstaltungen/sommer05/prosem/Vortrag5.pdf
 http://www.mathebibel.de/eigenwerte-berechnen
+
+time needed in seconds:  28551.309188604355
+Max error: 1.27883814649e-14 for k=1: at index: 11 of 22
+Max error: 1.7937734631e-13 for k=2: at index: 21 of 42
+Max error: 0.00121666321593 for k=3: at index: 41 of 82
+Max error: 0.0382262076262 for k=4: at index: 81 of 162
+Max error: 0.0475469272666 for k=5: at index: 161 of 322
+Max error: 0.0480776249649 for k=6: at index: 321 of 642
+Max error: 0.0481115965973 for k=7: at index: 641 of 1282
+Max error: 0.0481137336192 for k=8: at index: 1281 of 2562
+Max error: 0.0481138676146 for k=9: at index: 2561 of 5122
+Max error: 0.0481138760028 for k=10: at index: 5121 of 10242
+
