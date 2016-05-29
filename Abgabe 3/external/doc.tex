@@ -24,7 +24,7 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 
 
 \begin{titlepage}
-\author{Klas Benjamin, Knoll Alexander }
+\author{Knoll Alexander }
 \title{Iterative Verfahren}
 \date{\today}
 \end{titlepage}
@@ -440,7 +440,13 @@ def create_matrix(n):
 	 		Dieses mal werden nur $k<=5$ ausgewertet um die berechnungen in einem Zeitlichen Rahmen halten zu können. Für die Konvergenzgeschwindigkeit spielt die rechte Seite, 
 	 		in diesem Fall, eine untergeordnete Rolle. Somit ist nicht zu erwarten dass die Resultate diesmal besser, oder schneller sind. Die berechnungen werden mit einer
 	 		angepassten $multi\_solve$ Funktion durchgeführt (nur anpassung bezüglich der Ausgabe, keine Algorithmischen).
-
+		\begin{figure}[H] 
+	 		\centering
+	 		\includegraphics[width=0.9\textwidth]{extra_k.png}
+	 		\caption{Plots mit max\_iter = 1000000}
+	 		\label{fig:Bild6}
+	 	\end{figure}
+	 	Dem Plot kann entnommen werden, dass sich der Punkt mit maximaler Auslenkung tatsächlich leicht nach links verschiebt. Nähmlich zwischen $x=4$ und $x=5$
 
 \section{Herleitung der Diskretisierung}
 
@@ -451,6 +457,8 @@ def create_matrix(n):
 \section{SOR-Verfahren}
 
 \section{cg-Verfahren}
+
+\section{(Erklärung)}
 
 \newpage
 \bibliography{literatur}

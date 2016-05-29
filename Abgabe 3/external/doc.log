@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.25)  29 MAY 2016 17:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.25)  29 MAY 2016 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3547,9 +3547,61 @@ l.442 ...nktion durchgef√ºhrt (nur anpassung bez√º
 
 Characters128-191areonlyallowedasargumentstocharacters194-244
 
+<extra_k.png, id=62, 578.16pt x 433.62pt>
+File: extra_k.png Graphic file (type png)
+ <use extra_k.png>
+Package pdftex.def Info: extra_k.png used on input line 445.
+(pdftex.def)             Requested size: 409.71692pt x 307.28348pt.
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.449 ... der Punkt mit maximaler Auslenkung tats√
+                                                  §chlich leicht nach links ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 ...der Punkt mit maximaler Auslenkung tats√§
+                                                  chlich leicht nach links v...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
+! Undefined control sequence.
+√->\UTFviii@two@octets 
+                       √
+l.449 ...√§chlich leicht nach links verschiebt. N√
+                                                  §hmlich zwischen $x=4$ und...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Package utf8x Error: Character164appearedalone.
+
+See the utf8x package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 ...§chlich leicht nach links verschiebt. N√§
+                                                  hmlich zwischen $x=4$ und ...
+
+Characters128-191areonlyallowedasargumentstocharacters194-244
+
 File: hmlogo.png Graphic file (type png)
 <use hmlogo.png>
-Package pdftex.def Info: hmlogo.png used on input line 455.
+Package pdftex.def Info: hmlogo.png used on input line 461.
 (pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
 
 
@@ -3558,14 +3610,26 @@ Package Fancyhdr Warning: \headheight is too small (40.15015pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[11 <./extra_k.png>]
+File: hmlogo.png Graphic file (type png)
+ <use hmlogo.png>
+Package pdftex.def Info: hmlogo.png used on input line 461.
+(pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (40.15015pt): 
+ Make it at least 54.53772pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 No file doc.bbl.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 461.
+LaTeX Warning: Empty `thebibliography' environment on input line 467.
 
 File: hmlogo.png Graphic file (type png)
 <use hmlogo.png>
-Package pdftex.def Info: hmlogo.png used on input line 463.
+Package pdftex.def Info: hmlogo.png used on input line 469.
 (pdftex.def)             Requested size: 115.70297pt x 50.18768pt.
 
 
@@ -3574,12 +3638,12 @@ Package Fancyhdr Warning: \headheight is too small (40.15015pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] (./doc.aux) ) 
+[13] (./doc.aux) ) 
 Here is how much of TeX's memory you used:
- 8962 strings out of 494976
- 127261 string characters out of 6179137
+ 8968 strings out of 494976
+ 127346 string characters out of 6179137
  257902 words of memory out of 5000000
- 12009 multiletter control sequences out of 15000+600000
+ 12014 multiletter control sequences out of 15000+600000
  47073 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,16n,43p,371b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3595,10 +3659,10 @@ exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb
 >
-Output written on doc.pdf (13 pages, 447398 bytes).
+Output written on doc.pdf (14 pages, 489635 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
