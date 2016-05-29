@@ -1,7 +1,7 @@
 
 \documentclass[12pt,titlepage]{article}
 
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{cite}
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},
@@ -84,7 +84,7 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 \part*{Euler-Bernoulli-Balken}
 
 	Der Euler-Bernoulli-Balken ist ein einfaches Modell für eine Biegevorgang auf Grund von
-	Spannung. Bezeichnet $y(x)$ für $0 ≤ x ≤ L$ die vertikale Auslenkung, so gilt
+	Spannung. Bezeichnet $y(x)$ für $0 \leq x \leq L$ die vertikale Auslenkung, so gilt
 	$EIy (x) = f (x)$ wobei $E$ eine Material-Konstante und $I$ das Trägheitsmoment ist. 
 	$f(x)$ beschreibt als Kraft pro Einheitslänge die Beladung des Balkens. Durch Diskretisierung erhält man aus der Differentialgleichung ein lineares Gleichungsystem, das hier iterativ gelöst werden soll.
 	
@@ -146,7 +146,7 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 			Glücklicherweise kürzen sich viele Terme da auf den meisten Diagonalen Null Einträge enthalten sind. Somit erzeugt einzig die Hauptdiagonale einen Term, für beliebig große Matrizen dieser Form,
 			der dargestellt werden kann als
 			\begin{equation*}
-				(12-\lambda)\cdot\prod_{i=1}^{n-1}(6-\lambda) \cdot (12-\lambda) = 0
+				(12-\lambda)\cdot\prod_{i=1}^{n-1}(6-\lambda) \cdot (12-\lambda) = 0 
 			\end{equation*}
 			
 			Somit sind nur die Eigenwerte $\lambda = 12$ und $\lambda = 6$ lösungen. Da diese Eigenwerte positiv sind folgt, dass das Gaus-Seidel Verfahren für beliebig große Matrizen $A$ konvergiert.
@@ -188,14 +188,14 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 	 	\end{lstlisting}
 		\end{tabular}
 		\newpage
-		Die Funktion $seidel$ nimmt als argument zwei Listen. Die aktuelle Lsung  $x^m$ und die rechte Seite der Gleichung $b$. Da der Algorithmus die bergebene Liste der aktuellen Lsung bearbeitet, also ihren Zustand verndert, ist es notwendig sie vorher in einer Kopie zu sichern. Somit gehen die alten Werte nicht verloren
-		und es knnen weitere Untersuchungen vorgenommen werden. Die Funktion $inner\_sum$, aufgerufen durch $seidel$ berechnet ausgehend von einem Index, wie der Name es schon vermuten lsst, die innere Summen von Gleichung (2), also
+		Die Funktion $seidel$ nimmt als argument zwei Listen. Die aktuelle Lösung  $x^m$ und die rechte Seite der Gleichung $b$. Da der Algorithmus die übergebene Liste der aktuellen Lösung bearbeitet, also ihren Zustand verandert, ist es notwendig sie vorher in einer Kopie zu sichern. Somit gehen die alten Werte nicht verloren
+		und es können weitere Untersuchungen vorgenommen werden. Die Funktion $inner\_sum$, aufgerufen durch $seidel$, berechnet ausgehend von einem Index, wie der Name es schon vermuten lässt, die innere Summen von Gleichung (2), also
 		\begin{equation*}
 			inner\_sum = \sum_{i=1}^{k-1}a_{ki}\cdot x_{i}^{(m+1)} + \sum_{i = k+1}^{n}a_{ki}\cdot x_{i}^m.
 		\end{equation*}
 		
-		Dieser Algorithmus wird iterativ von der Funktion $solve$ aufgerufen. Parameter fr $solve$ sind der Startvektor
-		$x^0$, die rechte Seite $b$, die Anzahl an maximal Iterationen als auch eine Toleranz fr den Lsungsfortschritt.
+		Dieser Algorithmus wird iterativ von der Funktion $solve$ aufgerufen. Parameter für $solve$ sind der Startvektor
+		$x^0$, die rechte Seite $b$, die Anzahl an maximal Iterationen als auch eine Toleranz für den Lsungsfortschritt.
 		\newline \newline
 		\begin{tabular}{c}
 		\begin{lstlisting}
@@ -216,10 +216,10 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 		\begin{equation*}
 			\max [x^{m+1}-x^{m}] < tol
 		\end{equation*}
-		erfllt ist.
+		erfüllt ist.
 		
 		\subsubsection{Parallelisierung}
-			Der Algorithmus selbst ist nicht parallelisierbar, da für die aktuelle Berechnung immer die aktuellsten Werte benötigt werden. Dass macht es unmöglich die dass Problem aufzuteilen und von verschiedenen Prozessoren bearbeiten zu lassen. Was jedoch möglich ist, ist die bearbeitung des Problems für verschieden große Gleichungssysteme. Wenn gilt
+			Der Algorithmus selbst ist nicht parallelisierbar, da für die aktuelle Berechnung immer die aktuellsten Werte benötigt werden. Dass macht es unmöglich dass Problem aufzuteilen und von verschiedenen Prozessoren bearbeiten zu lassen. Möglich ist jedoch die parallele bearbeitung verschiedener Gleichungssysteme. Wenn gilt
 			\begin{equation*}
 				n = 10 \cdot 2^k +1
 			\end{equation*}
@@ -235,14 +235,14 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
     line_space_list = [[] for _ in n_list]
     ys_list = [0 for _ in n_list]
     for n in n_list:
-    	# werte für solve initialisieren
+    	# initialisierungen fuer solve
     	index = n_list.index(n)
         h = length/(n+1)
         ys_list[index] = [0 for _ in range(n)]
         fs = [f() for _ in range(n)]
         bs = list(map(lambda x: x * ((h**4) / (E*I)), fs))
         line_space_list[index] = np.linspace(0, length, n+2)
-        # solve für aktuelle werte in neuem thread starten
+        # solve fuer aktuelle werte in neuem thread starten
         thread_list[index] = thr.Thread(target=solve, 
         								args=(ys_list[index], bs, max_iter, tol))
         thread_list[index].start()
@@ -303,7 +303,7 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 					6	& 0.0481135140356\\
 				\end{tabular}
 			\end{table}
-			Man kann erkennen dass bereits für relativ kleine $k$ der Fehler recht groß wird. Bereits ab $k=3$ ist dass Resultat für diegenutzen Parameter unbrauchbar. Der Grund hierfür liegt darin dass für große $n$ dass Verfahren nur sehr langsam konvergiert. Der Plot für $k=1..10$ verdeutlicht die Situation.
+			Man kann erkennen dass bereits für relativ kleine $k$ der Fehler recht groß wird. Bereits ab $k=3$ ist dass Resultat für die genutzen Parameter unbrauchbar. Der Grund hierfür liegt darin dass für große $n$ dass Verfahren nur sehr langsam konvergiert. Der Plot für $k=1..10$ verdeutlicht die Situation.
 		 	\begin{figure}[H] 
 	 			\centering
 	 			\includegraphics[width=0.9\textwidth]{ks.png}
@@ -372,7 +372,8 @@ def create_matrix(n):
 				\end{tabular}
 				\newline \newline
 				Die so erzeugten Matrizen werden verwendet um mittels Gleichung (4) den Konditionswert für dass jeweilige Gleichungssystem zu bestimmen.
-				Zur berechnung der Konditionswerte wird die Funktion $compute\_conditions$ verwendet, welche ein oberes Limit für den Wert $k$ bekommt.
+				Große Konditionswerte bedeuten langsames Konvergenzverhalten.
+				Zur berechnung der Konditionen wird die Funktion $compute\_conditions$ verwendet, welche ein oberes Limit für den Wert $k$ bekommt.
 				Als Resultat wird eine Liste mit den entsprechhenden Konditionswerten zurückgeliefert. \newline \newline
 				\begin{tabular}{c}
 				\begin{lstlisting}
@@ -448,24 +449,17 @@ def create_matrix(n):
 	 	\end{figure}
 	 	Dem Plot kann entnommen werden, dass sich der Punkt mit maximaler Auslenkung tatsächlich leicht nach links verschiebt. Nähmlich zwischen $x=4$ und $x=5$
 
-\section{Herleitung der Diskretisierung}
-
-\section{Eingespannter Balken}
-
-\section{Vergleich der Tragfhigkeit}
-
-\section{SOR-Verfahren}
-
-\section{cg-Verfahren}
-
-\section{(Erklärung)}
-
 \newpage
-\bibliography{literatur}
-\bibliographystyle{agsm}
+\section{Erklärung}
+	Alexander Knoll: Mein Anteil an der Abgabe bestand in der Bearbeitung der Aufgaben Eins bis Fünf. Dazu gehört die umsetzung in Python als auch die Dokumentation in TeX.
 
-\begin{thebibliography}{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+%\newpage
+%\bibliography{literatur}
+%\bibliographystyle{agsm}
 
-\end{thebibliography}
+%\begin{thebibliography}{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+
+
+%\end{thebibliography}
 
 \end{document}

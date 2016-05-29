@@ -66,6 +66,7 @@ def inner_sum(ys, index):
     :return result: inner sum of gauss-seidel algorithm.
 
     """
+    # if index is not one of the first or last two rows
     if 1 < index < len(ys)-2:
         result = ys[index-2] - 4 * ys[index-1] - 4 * ys[index+1] + ys[index+2]
     elif index == 0:
@@ -89,8 +90,10 @@ def seidel(ys, bs):
     """
     ys_old = list(ys)
     for i in range(len(ys)):
+        # default diagonal element for rows which are not the first or last
         diag_elem = 6.0
         if i == 0 or i == len(ys)-1:
+            # diagonal element of first and last row
             diag_elem = 12.0
         ys[i] = (bs[i] - inner_sum(ys, i))/diag_elem
     return ys, ys_old
@@ -110,8 +113,10 @@ def solve(ys, bs, max_iter=40000, tol=1e-6):
     iterating = True
     while iterating:
         _, ys_old = seidel(ys, bs)
+        # compute difference of old and new solution and get max value of it
         step = max([a_i - b_i for a_i, b_i in zip(ys, ys_old)])
         it_counter += 1
+        # abort iteration of difference is smaller than tol
         if it_counter >= max_iter or abs(step) <= tol:
             iterating = False
     return it_counter
@@ -125,6 +130,7 @@ def compute_error(numerical, exact):
     :return max_error, max_error_index: value of max error and its index
 
     """
+    # compute difference of the two lists
     difference = [abs(a_i - b_i) for (a_i, b_i) in zip(exact, numerical)]
     max_error = max(difference)
     max_error_index = difference.index(max_error)
@@ -140,11 +146,13 @@ def compute_conditions(k_limit):
     n_list = [10 * (2**k) + 1 for k in range(1, k_limit+1, 1)]
     cond_list = [0 for _ in n_list]
     for n in n_list:
+        # compute condition for each element of n_list
         index = n_list.index(n)
         matrix = create_matrix(n)
         inverse_matrix = nplin.inv(matrix)
         matrix_norm = nplin.norm(matrix)
         inverse_matrix_norm = nplin.norm(inverse_matrix)
+        # add result to cond_list
         cond_list[index] = matrix_norm*inverse_matrix_norm
     return cond_list
 
@@ -158,12 +166,14 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
     :param max_iter: number of maximum iterations.
     :param tol: stops iteration if max(x^m+1 - x^m) < tol.
     """
+    # init lists
     start = time.time()
     n_list = [10 * (2**k) + 1 for k in range(1, k_limit+1, 1)]
     thread_list = [None for _ in n_list]
     line_space_list = [[] for _ in n_list]
     ys_list = [0 for _ in n_list]
     for n in n_list:
+        # for each element of n_list start new thread with initialised values
         index = n_list.index(n)
         h = length/(n+1)
         ys_list[index] = [0 for _ in range(n)]
@@ -174,6 +184,7 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
         thread_list[index].start()
 
     for thread in thread_list:
+        # wait for each thread to finish and plot results
         index = thread_list.index(thread)
         thread.join()
         ys_list[index] = [0] + ys_list[index] + [0]
@@ -185,6 +196,7 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
     plt.title('Plot for k = 1 to %s with TOL=%s'%(k_limit,tol))
     plt.legend(('k=1', 'k=2','k=3','k=4','k=5','k=6','k=7','k=8','k=9','k=10'), loc='best')
     plt.grid()
+    # compute and print task time
     print("\ttime needed in seconds: ", end - start)
     #plt.show()
 
@@ -204,6 +216,7 @@ def multi_solve2(k_limit, max_iter=10000, tol=1e-10):
     line_space_list = [[] for _ in n_list]
     ys_list = [0 for _ in n_list]
     for n in n_list:
+        # for each element of n_list start new thread with initialised values
         index = n_list.index(n)
         h = length/(n+1)
         ys_list[index] = [0 for _ in range(n)]
@@ -215,6 +228,7 @@ def multi_solve2(k_limit, max_iter=10000, tol=1e-10):
         thread_list[index].start()
 
     for thread in thread_list:
+        # wait for each thread to finish and plot results
         index = thread_list.index(thread)
         thread.join()
         ys_list[index] = [0] + ys_list[index] + [0]
@@ -226,6 +240,7 @@ def multi_solve2(k_limit, max_iter=10000, tol=1e-10):
     end = time.time()
     plt.title('Plot for k = 1 to %s with TOL=%s'%(k_limit,tol))
     plt.grid()
+    # compute and print end time
     print("\ttime needed in seconds: ", end - start)
     #plt.show()
 
@@ -234,19 +249,23 @@ def main():
     """
     Runs solving routine and compares result to exact solution.
     """
+    # init values
     n = 10
     h = length/(n+1)
     ys = [0 for _ in range(n)]
     fs = [f() for _ in range(n)]
 
     bs = list(map(lambda x: x * ((h**4) / (E*I)), fs))
+    # solve problem
     num_iterations = solve(ys, bs, max_iter=1000000, tol=1e-6)
     print("\tNumber of Iterations taken: ", num_iterations)
     exact_plot = compute_exact(np.arange(0, 10.1, 0.1))
     exact_comp = compute_exact(np.linspace(0, length, n+2))
     ys = [0] + ys + [0]
+    # compute error
     error, index = compute_error(ys, exact_comp)
     print("\tMax error: %s at index: %s of %s"%(error, index, len(ys)-1))
+    # plot results
     plt.figure("Comparing numerical solution with n=10 to exact solution")
     plt.plot(np.linspace(0, length, n+2), [-x for x in ys], color='red')
     plt.plot(np.arange(0, 10.1, 0.1), [- x for x in exact_plot], color='green')
@@ -270,21 +289,25 @@ def main_extra():
     Runs solving routine with extra weight on right side and compares to numerical solution
     without extra weight.
     """
+    # init values for standard solve and solve with extra weight
     n = 10
     h = length/(n+1)
     ys = [0 for _ in range(n)]
     ys2 = list(ys)
     fs = [f() for _ in range(n)]
     fs2 = list(fs)
+    # apply extra weight to fs
     apply_weight_to_f(fs, h)
     bs = list(map(lambda x: x * ((h**4) / (E*I)), fs))
     bs2 = list(map(lambda x: x * ((h**4) / (E*I)), fs2))
+    # compute results
     num_iterations = solve(ys, bs, max_iter=1000000, tol=1e-18)
     num_iterations2 = solve(ys2, bs2, max_iter=1000000, tol=1e-18)
     ys = [0] + ys + [0]
     ys2 = [0] + ys2 + [0]
     max_value = max(ys)
     max_index = ys.index(max_value)
+    # plot results
     print("\tIndex of most bended point of bar: %s with %s"%(max_index, max_value))
     plt.figure("Comparing numerical solution with extra weight to standard")
     plt.plot(np.linspace(0, length, n+2), [-x for x in ys], color='green')
@@ -308,6 +331,7 @@ def main_cond():
     Computes condition values for k up to 3 and plots results
     """
     k_limit = 3
+    # compute and plot conditions
     conds = compute_conditions(k_limit)
     plt.figure('conditions Plot')
     plt.title('Condition values for k = 1 to %s' % k_limit)
@@ -317,6 +341,7 @@ def main_cond():
 
 
 def start():
+    # demonstrate execution of all routines
     print('ANALYZING RESULTS FOR N=10')
     main()
     print('ANALYZING RESULTS FOR k FROM 1 TO 5')
