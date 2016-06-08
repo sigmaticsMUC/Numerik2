@@ -1,0 +1,94 @@
+\documentclass[12pt,titlepage]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{cite}
+\usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},
+tmargin={2.5cm},bmargin = {4cm}]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{caption,tabularx,booktabs}
+\usepackage{multirow}
+\usepackage{here}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{blindtext}
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+\begin{titlepage}
+\author{Knoll Alexander }
+\title{Iterative Verfahren}
+\date{\today}
+\end{titlepage}
+
+\pagestyle{fancy}
+%
+\makeatletter
+\let\runauthor\@author
+\lhead{Numerik 2}
+\chead{}
+\rhead{\includegraphics[height=50px]{hmlogo}}
+\setlength\headheight{40px}
+\setlength{\parindent}{0pt} % Neue Absätze werden nicht eingerückt
+
+%
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{\runauthor}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Neue Befehle werden hier definiert        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\newcommand{\norm}[1]{\lvert #1 \rvert}
+
+
+\lstloadlanguages{Python}
+\lstset{numbers=left,stepnumber=1,frame=single,language=Python,
+        basicstyle=\scriptsize\ttfamily,numberstyle=\scriptsize,
+        commentstyle=\upshape\ttfamily,
+        numbersep=7pt,tabsize=2,breaklines=false,
+        morecomment=[l]{//},showtabs=false,showspaces=false,
+        showstringspaces=false,extendedchars=true,inputencoding={utf8},
+        keywordstyle=\bfseries\color{darkblue},stringstyle=\color{darkred}}
+\newcommand{\pp}[1]{\phantom{#1}}
+
+% diese zeile ermöglicht aufzählungen über buchstaben
+% \renewcommand{\theenumi}{\Alph{enumi}}
+
+\newcommand\Section[1]{ %
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+  \subsubsection*{#1}
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.6,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\renewcommand{\refname}{Literaturverzeichnis}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+
+\begin{document}
+
+\maketitle
+
+\part*{Euler-Bernoulli-Balken}
+
+
+
+%\newpage
+%\bibliography{literatur}
+%\bibliographystyle{agsm}
+
+%\begin{thebibliography}{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+
+
+%\end{thebibliography}
+
+\end{document}
