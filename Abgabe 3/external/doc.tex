@@ -1,4 +1,3 @@
-
 \documentclass[12pt,titlepage]{article}
 
 \usepackage[utf8]{inputenc}
@@ -20,8 +19,6 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 \usepackage{blindtext}
 \usepackage{mathtools}
 \usepackage{amsmath}
-
-
 
 \begin{titlepage}
 \author{Knoll Alexander }
@@ -100,7 +97,7 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 		Ax = \frac{h^4}{EI}f,
 	\end{equation}
 	
-	wobei $h = \frac{L}{n+1}$ und $f = g \cdot f(x)$ gilt. Um zu prüfen ob eines der Verfahren konvergiert muss $A$ auf gewisse eigenschaften besitzen. Die Verfahren Konvergieren wenn eine der folgenden bedingungen erfüllt sind.
+	wobei $h = \frac{L}{n+1}$ und $f = g \cdot f(x)$ gilt. Um zu prüfen ob eines der Verfahren konvergiert muss $A$ gewisse eigenschaften besitzen. Die Verfahren konvergieren, wenn eine der folgenden Bedingungen erfüllt ist.
 	
 	\begin{itemize}
 		\centering
@@ -122,45 +119,44 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 		\subsubsection{Diagonaldominanz}
 			Beide Verfahren konvergieren sobald $A$ diagonaldominant ist. Speziel
 			für die gegebene Matrix lässt sich sagen, dass dies nicht der Fall ist.
-			Für Strikte Diagonaldominanz muss gelten
+			Für strikte Diagonaldominanz muss gelten
 			\begin{equation*}
 				\sum_{j = 1, j \neq i}^{n} |a_{ij}| < |a_{ii}|,
 			\end{equation*}
 		
-			bzw. für Schwache Diagonaldominanz
+			bzw. für schwache Diagonaldominanz
 			\begin{equation*}
 				\sum_{j = 1, j \neq i}^{n} |a_{ij}| \leq |a_{ii}|.
 			\end{equation*}
 		
-			Somit wird ersichtlich dass aufgrund der beiden ersten und leitzen Zeilen
-			$A$ nicht Diagonaldominant ist und deswegen dass Jacobi Verfahren, in diesem Fall, nicht
+			Somit wird ersichtlich, dass aufgrund der beiden ersten und letzten Zeilen
+			$A$ nicht Diagonaldominant ist und deswegen das Jacobi Verfahren in diesem Fall, nicht
 			konvergiert.
 
 		\subsubsection{Positiv Definititheit}
 		
-			Eine Matrix M ist positiv Definit genau dann wenn alle Eigenwerte größer als $0$ sind. Zur bestimmung der Eigenwerte wird folgende Gleichung gelöst
+			Eine Matrix M ist positiv Definit, genau dann wenn alle Eigenwerte größer als $0$ sind. Zur bestimmung der Eigenwerte wird folgende Gleichung gelöst
 			\begin{equation*}
 				det(A - E\lambda) = 0.
 			\end{equation*}
 			
-			Glücklicherweise kürzen sich viele Terme da auf den meisten Diagonalen Null Einträge enthalten sind. Somit erzeugt einzig die Hauptdiagonale einen Term, für beliebig große Matrizen dieser Form,
-			der dargestellt werden kann als
+			Glücklicherweise kürzen sich viele Terme, da auf den meisten Diagonalen $0$ Einträge enthalten sind. Somit erzeugt einzig die Hauptdiagonale einen Term, welcher für beliebig große Matrizen
+			dargestellt werden kann als
 			\begin{equation*}
 				(12-\lambda)\cdot\prod_{i=1}^{n-1}(6-\lambda) \cdot (12-\lambda) = 0 
 			\end{equation*}
 			
-			Somit sind nur die Eigenwerte $\lambda = 12$ und $\lambda = 6$ lösungen. Da diese Eigenwerte positiv sind folgt, dass das Gaus-Seidel Verfahren für beliebig große Matrizen $A$ konvergiert.
+			Somit sind nur die Eigenwerte $\lambda = 12$ und $\lambda = 6$ Lösungen. Da diese Eigenwerte positiv sind folgt, dass das Gaus-Seidel Verfahren für beliebig große Matrizen $A$ konvergiert.
 			
 	\subsection{Implementierung Gauss-Seidel}
 		
-		Beim Gauss-Seidel verfahren werden immer die Aktuellsten Werte der Lösung verwendet um einen Wert für die Nächste Stelle zu berechnen. Hierfür wird Gleichung (1) nach dem jeweiligen $x$ aufgelöst. Somit erhält man die Form
+		Beim Gauss-Seidel Verfahren werden immer die aktuellsten Werte der Lösung verwendet um einen Wert für die nächste Stelle zu berechnen. Hierfür wird Gleichung (1) nach dem jeweiligen $x$ aufgelöst. Somit erhält man die Form
 		\begin{equation}
 			x_{k}^{(m+1)} \coloneqq \frac{1}{a_{ii}}\left(b_{k} - \sum_{i=1}^{k-1}a_{ki}\cdot x_{i}^{(m+1)} - \sum_{i = k+1}^{n}a_{ki}\cdot x_{i}^m\right),
 		\end{equation}
-		wobei $b_k$ die rechte Seite der von Gleichung (1) ist, und $a$ die jeweiligen einträge der Matrix $A$.
+		wobei $b_k$ die rechte Seite der Gleichung (1) ist, und $a$ die jeweiligen Einträge der Matrix $A$.
 		Eine Implementierungsmöglichkeit wäre es Bandmatrizen zu benutzen, da diese wegen aussparung der Nullen
-		in diesem Fall einen deutlich geringeren Speicherbedarf besitzen. Jedoch für dass Speziell gegebene Problem ist 
-		es sinnvoller hart Kodierte Terme zu verwenden. Somit fällt nähmlich die Zugriffszeit auf Elemente, als auch der komplette Speicherbedarf, weg. Eine mögliche Umsetzung könnte wie folgt aussehen \newline
+		in den meisten Fällen einen deutlich geringeren Speicherbedarf besitzen. Jedoch ist es für das speziell gegebene Problem sinnvoller hart kodierte Terme zu verwenden. Somit fällt nähmlich die Zugriffszeit auf Elemente, als auch der komplette Speicherbedarf, weg. Eine mögliche Umsetzung könnte wie folgt aussehen \newline
 		\newline
 		\begin{tabular}{c}
 		\begin{lstlisting}
@@ -188,14 +184,14 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 	 	\end{lstlisting}
 		\end{tabular}
 		\newpage
-		Die Funktion $seidel$ nimmt als argument zwei Listen. Die aktuelle Lösung  $x^m$ und die rechte Seite der Gleichung $b$. Da der Algorithmus die übergebene Liste der aktuellen Lösung bearbeitet, also ihren Zustand verandert, ist es notwendig sie vorher in einer Kopie zu sichern. Somit gehen die alten Werte nicht verloren
-		und es können weitere Untersuchungen vorgenommen werden. Die Funktion $inner\_sum$, aufgerufen durch $seidel$, berechnet ausgehend von einem Index, wie der Name es schon vermuten lässt, die innere Summen von Gleichung (2), also
+		Die Funktion $seidel$ nimmt als Argument Zwei Listen. Die aktuelle Lösung  $x^m$ und die rechte Seite der Gleichung $b$. Da der Algorithmus die übergebene Liste der aktuellen Lösung bearbeitet, also ihren Zustand verändert, ist es notwendig sie vorher in einer Kopie zu sichern. Somit gehen die alten Werte nicht verloren
+		und es können weitere Untersuchungen vorgenommen werden. Die Funktion $inner\_sum$, aufgerufen durch $seidel$, berechnet ausgehend von einem Index, wie der Name es schon vermuten lässt, die inneren Summen von Gleichung (2). 
 		\begin{equation*}
 			inner\_sum = \sum_{i=1}^{k-1}a_{ki}\cdot x_{i}^{(m+1)} + \sum_{i = k+1}^{n}a_{ki}\cdot x_{i}^m.
 		\end{equation*}
 		
 		Dieser Algorithmus wird iterativ von der Funktion $solve$ aufgerufen. Parameter für $solve$ sind der Startvektor
-		$x^0$, die rechte Seite $b$, die Anzahl an maximal Iterationen als auch eine Toleranz für den Lsungsfortschritt.
+		$x^0$, die rechte Seite $b$, die Anzahl an maximal Iterationen als auch eine Toleranz für den Lösungsfortschritt.
 		\newline \newline
 		\begin{tabular}{c}
 		\begin{lstlisting}
@@ -212,18 +208,18 @@ tmargin={2.5cm},bmargin = {4cm}]{geometry}
 	 	\end{lstlisting}
 		\end{tabular}
 		\newline \newline
-		Die Funktion iteriert solange bis entweder die Anzahl an maximal iterationen erreicht, oder bis dass Kriterium
+		Die Funktion iteriert solange bis entweder die Anzahl an maximal Iterationen erreicht, oder bis das Kriterium
 		\begin{equation*}
 			\max [x^{m+1}-x^{m}] < tol
 		\end{equation*}
 		erfüllt ist.
 		
 		\subsubsection{Parallelisierung}
-			Der Algorithmus selbst ist nicht parallelisierbar, da für die aktuelle Berechnung immer die aktuellsten Werte benötigt werden. Dass macht es unmöglich dass Problem aufzuteilen und von verschiedenen Prozessoren bearbeiten zu lassen. Möglich ist jedoch die parallele bearbeitung verschiedener Gleichungssysteme. Wenn gilt
+			Der Algorithmus selbst ist nicht parallelisierbar, da für die aktuelle Berechnung immer die aktuellsten Werte benötigt werden. Dass macht es unmöglich dass Problem aufzuteilen und von verschiedenen Prozessoren bearbeiten zu lassen. Möglich ist jedoch die parallele Bearbeitung verschiedener Gleichungssysteme. Wenn gilt
 			\begin{equation*}
 				n = 10 \cdot 2^k +1
 			\end{equation*}
-			für $k=1,..,10$. Es ist also möglich für jedes $k$ dass Problem separat, und somit parallel, zu bearbeiten.
+			für $k=1,..,10$ ist also möglich für jedes $k$ das Problem separat, und somit parallel, zu bearbeiten.
 			Hierfür können verschiedene Strategien verwendet werden. In diesem Fall wurde Pythons $threading$ Packet verwendet.\newline \newline
 			\begin{tabular}{c}
 			\begin{lstlisting}
@@ -264,12 +260,12 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 		\end{tabular}
 		\newline \newline
 		Die Funktion $multi\_solve$	nimmt als Parameter ein oberes Limit für $k$ als auch wieder eine obere Grenze für die Anzahl der maximal Iterationen und eine Toleranz. Für jedes $k$ wird dabei ein neuer Thread gestartet. Anschließend wird durch $thread.join$ auf die beendigung eines jeden Trheads gewartet.
-		Allerdings hat diese Implementierung den Nachteil dass nicht darauf geachtet wird ob alle Verfügbaren Resourcen der Prozessoren genutz werden. Im Schnitt liegt die Auslastung auf einem üblichen Rechner bei 30\% bis 40\%.
-		Außerdem sollte beachtet werden dass der Speicherbedarf größer wird. Würde man statt Hart Kodierten Termen für die Berechnung der Lösung, normale Matrizen verwenden, so würde dass bei einem 4GB RAM Rechner zu Problemen führen.	
+		Allerdings hat diese Implementierung den Nachteil, dass nicht darauf geachtet wird ob alle verfügbaren Resourcen der Prozessoren genutz werden. Im Schnitt liegt die Auslastung auf einem üblichen Rechner bei 30\% bis 40\%.
+		Außerdem sollte beachtet werden dass der Speicherbedarf größer wird. Würde man statt hart kodierten Termen für die Berechnung der Lösung normale Matrizen verwenden, so würde das bei einem 4GB RAM Rechner zu Problemen führen.	
 		
 	\subsection{Auswertung}
 		In diesem Abschnitt sollen die numerische Ergebnisse untersucht und nach möglichkeit weiter begründet werden.
-		Für den Vergleich wird die Analytische Lösung des Problems einbezogen, welche gegeben ist durch
+		Für den Vergleich wird die analytische Lösung des Problems einbezogen, welche gegeben ist durch
 		\begin{equation}
 			y(x) = \frac{fx^2(L-x)^2}{24EI}
 		\end{equation}
@@ -277,7 +273,7 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 		\newpage
 		\subsubsection{Auswertung n = 10}
 			Zunächst soll dass Gleichungssystem einzeln für $n=10$ gelöst werden. Dafür wird die oben definierte
-		 	Funktion $solve$ mit den iterations Parametern $max\_iter=1000000$ und $tol=1e^{-6}$, für 6-Stellige genauigkeit, aufgerufen.
+		 	Funktion $solve$ mit den Parametern $max\_iter=1000000$ und $tol=1e^{-6}$ aufgerufen.
 		 	
 		 	\begin{figure}[H] 
 	 			\centering
@@ -289,7 +285,7 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 	 		$8.75913330772e^{-5}$.
 	 	
 	 	\subsubsection{Auswertung für k's}
-	 		Nun werden die Gleichungssysteme mittels $multi\_solve$ gelöst. Zunächst werden dabei die iterations Parameter $max\_iter=10000$ und $tol=1e^{-6}$ verwendet. Die Auswertung liefert folgende Fehlertabelle für den Fehler in der Mitte des Balkens.	 		
+	 		Nun werden die Gleichungssysteme mittels $multi\_solve$ gelöst. Zunächst werden dabei die Parameter $max\_iter=10000$ und $tol=1e^{-6}$ verwendet. Die Auswertung liefert folgende Fehlertabelle für den Fehler in der Mitte des Balkens.	 		
 			\begin{table}[!h]
 				\centering
 				\begin{tabular}{c c c c}
@@ -303,14 +299,14 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 					6	& 0.0481135140356\\
 				\end{tabular}
 			\end{table}
-			Man kann erkennen dass bereits für relativ kleine $k$ der Fehler recht groß wird. Bereits ab $k=3$ ist dass Resultat für die genutzen Parameter unbrauchbar. Der Grund hierfür liegt darin dass für große $n$ dass Verfahren nur sehr langsam konvergiert. Der Plot für $k=1..10$ verdeutlicht die Situation.
+			Man kann erkennen, dass bereits für relativ kleine $k$ der Fehler recht groß wird. Bereits ab $k=3$ ist das Resultat für die genutzen Parameter unbrauchbar. Der Grund hierfür liegt darin, dass für große $n$ das Verfahren nur sehr langsam konvergiert. Der Plot für $k=1..10$ verdeutlicht die Situation.
 		 	\begin{figure}[H] 
 	 			\centering
 	 			\includegraphics[width=0.9\textwidth]{ks.png}
 	 			\caption{Plots für k=1..10}
 	 			\label{fig:Bild2}
 	 		\end{figure}
-	 		Bereits ab $k=2$ kann man im Plot sehen dass das Resultat nicht zufriedenstellend ist, da der Fehler viel zu groß wird. Abhilfe verschaffen hierfür besser geeignete iterations Parameter. Die folgende Auswertung verwendet die Parameter $max\_iter=1000000$ und $TOL = 1e^{-100}$. Die Rechenzeit betrug dabei $t \approx 8h$
+	 		Bereits ab $k=2$ kann man im Plot sehen, dass das Resultat nicht zufriedenstellend ist da der Fehler viel zu groß wird. Abhilfe verschaffen hierfür besser geeignete Parameter. Die folgende Auswertung verwendet die Parameter $max\_iter=1000000$ und $TOL = 1e^{-100}$. Die Rechenzeit betrug dabei $t \approx 8h$
 			\begin{table}[H]
 				\centering
 				\begin{tabular}{c c c c}
@@ -325,7 +321,7 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 				\end{tabular}
 			\end{table}
 			\newpage
-			Es zeigt sich dass die Näherungen besser werden, jedoch bereits ab $k=4$ die Anzahl an iterationen mit $max\_iter=1000000$ zu niedrig angesetzt ist. Der Plot verdeutlicht dass selbst nach so langer rechenzeit, nicht merklich besser werden.	 		
+			Es zeigt sich, dass die Näherungen besser werden. Jedoch ist bereits ab $k=4$ die Anzahl an iterationen mit $max\_iter=1000000$ zu niedrig angesetzt. Der Plot verdeutlicht, dass selbst nach so langer rechenzeit, die Ergebnisse nicht merklich besser werden.	 		
 		 	\begin{figure}[H] 
 	 			\centering
 	 			\includegraphics[width=0.9\textwidth]{one_mill.png}
@@ -336,25 +332,25 @@ def multi_solve(k_limit, max_iter=10000, tol=1e-10):
 	 		Bereits für kleine k wird der Fehler in der Mitte des Balkens sehr schnell, sehr groß.
 	 		
 	 		\subsubsection{Fehlerbetrachtung}
-				Die Kondition sagt etwas darüber aus ob kleine störungen zu verstärkung des Fehlers über alle Grenzen führen. Wenn für den Konditionswert gilt $K(A) < 1$, so spricht man von
-				von eime gut Konditionierten (gut gestelltem) Problem. Für reguläre Matrizen lässt sich der Konditionswert abschätzen durch
+				Die Kondition sagt etwas darüber aus ob kleine störungen zu verstärkung des Fehlers über alle Grenzen führen. Wenn für den Konditionswert gilt $K(A) < 1$ so spricht man von
+				einem gut Konditionierten (bzw. gut gestelltem) Problem. Für reguläre Matrizen lässt sich der Konditionswert abschätzen durch
 				\begin{equation}
 					K(A) = \norm{\norm{A}}\cdot\norm{\norm{A^{-1}}}.
 				\end{equation}
-				Hierfür muss jedoch gelten dass für beliebig große Gleichungssysteme die Matrix $A$ regulär ist (also vollen rang hat). Dies gilt genau dann wenn
+				Hierfür muss jedoch gelten, dass für beliebig große Gleichungssysteme die Matrix $A$ regulär ist (also vollen rang hat). Dies gilt genau dann wenn
 				\begin{equation*}
 					det(A) \neq 0.
 				\end{equation*}
 				\newpage
-				Begründen lässt sich dies wie bereits bei der Konvergenzuntersuchung. Da alle diagonalen, bis auf die Hauptdiagonale mindestens ein Null Element enthalten, kann
+				Begründen lässt sich dies wie bereits bei der Konvergenzuntersuchung. Da alle diagonalen, bis auf die Hauptdiagonale, mindestens ein Null Element enthalten, kann
 				die Determinante wie folgt dargestellt werden
 				\begin{equation*}
 					12\cdot\prod_{i=1}^{n-1}6 \cdot 12.
 				\end{equation*}
-				Dieser Ausdruck ist immer größer als Null, somit ist $A$ für beliebige größen regulär. Also kann Gleichung (4) zur bestimmung der Kondition verwendet werden.
+				Dieser Ausdruck ist immer größer als $0$, somit ist $A$ für beliebige größen regulär. Also kann Gleichung (4) zur bestimmung der Kondition verwendet werden.
 				
 			\subsubsection{Konditionsbestimmung}
-				Die Kondition des Problems für verschiedene $k$ soll mithilfe von Python bestimmt werden. Hierfür werden die Funktionen $norm$ und $inv$ aus dem Paket $numpy.linalg$ verwendet.
+				Die Kondition des Problems für verschiedene $k$ soll mit Hilfe von Python bestimmt werden. Hierfür werden die Funktionen $norm$ und $inv$ aus dem Paket $numpy.linalg$ verwendet.
 				Notwendigerweise werden nun die Matrizen tatsächlich konstruiert, dies geschieht mittels der Funktion $create\_matrix$ welches als Parameter die Dimension $n$ erwartet.\newline
 				\newline
 				\begin{tabular}{c}
@@ -371,7 +367,7 @@ def create_matrix(n):
 	 			\end{lstlisting}
 				\end{tabular}
 				\newline \newline
-				Die so erzeugten Matrizen werden verwendet um mittels Gleichung (4) den Konditionswert für dass jeweilige Gleichungssystem zu bestimmen.
+				Die so erzeugten Matrizen werden verwendet um mittels Gleichung (4) den Konditionswert für das jeweilige Gleichungssystem zu bestimmen.
 				Große Konditionswerte bedeuten langsames Konvergenzverhalten.
 				Zur berechnung der Konditionen wird die Funktion $compute\_conditions$ verwendet, welche ein oberes Limit für den Wert $k$ bekommt.
 				Als Resultat wird eine Liste mit den entsprechhenden Konditionswerten zurückgeliefert. \newline \newline
@@ -393,7 +389,7 @@ def create_matrix(n):
 				\newline \newline
 				Die Funktion bildet zu jeder Matrix die Inverse und bestimmt die jeweiligen Normen.
 				\newpage
-				Ein Plot der die Kondition zu jedem Wert für k darstellt, verdeutlicht dass verhalten.
+				Ein Plot der die Kondition zu jedem Wert für k darstellt, verdeutlicht das Verhalten.
 				\begin{figure}[H] 
 					 \centering
 					 \includegraphics[width=0.9\textwidth]{conds.png}
@@ -404,10 +400,10 @@ def create_matrix(n):
 \section{Belasteter Balken}
 
 	Nun soll der aufliegende Balken zwischen $x=3$ und $x=4$ zusätzlich mit 500$kg$ belastet werden.
-	Da die angreifende Kraft bereits als eine Liste in den algorithmen implementiert wurde ist es bereits aussreichend die rechte seite vor
-	dem Ausführen der Routinen anzupassen. Hierfür wird die Funcktion $apply\_weight\_to\_f$ verwended. Diese erhält als Argumente die Liste mit
+	Da die angreifende Kraft bereits als eine Liste in den Algorithmen implementiert wurde ist es aussreichend die rechte Seite vor
+	dem Ausführen der Routinen anzupassen. Hierfür wird die Funcktion $apply\_weight\_to\_f$ verwendet. Diese erhält als Argumente die Liste mit
 	den standartmäßig wirkenden Kräften $fs$, als auch eine Schrittweite $h$. Für jedes Element dessen tatsächliche Position zwischen $x=3$ und $x=4$ liegt
-	wird die Zusätzliche belastung von 500$kg$ dazu addiert. \newline \newline
+	wird die zusätzliche Belastung von 500$kg$ addiert. \newline \newline
 	\begin{tabular}{c}
 	\begin{lstlisting}
 		def apply_weight_to_f(fs, h):
@@ -420,12 +416,12 @@ def create_matrix(n):
 	Die Funktion hat keinen Rückgabewert da sie den Zustand der Liste selbst verändert.	
 	
 	\subsection{Auswertung}
-		Da nun keine exakte Lösung vorhanden ist an der ein Fehler gemessen werden kann, wird in diesem Teil darauf Verzichtet.
-		Stattdessen wird die verschiebung der maximalen Auslenkung untersucht. Hierfür wird die Routine $multi\_solve$ mit angepasster rechter Seite
+		Da nun keine exakte Lösung vorhanden ist an der ein Fehler gemessen werden kann, wird in diesem Teil darauf verzichtet.
+		Stattdessen wird die Verschiebung der maximalen Auslenkung untersucht. Hierfür wird die Routine $multi\_solve$ mit angepasster rechter Seite
 		ausgeführt. Diesmal werden jedoch die Parameter $max_iter=100000$ und $tol=1e^{-18}$ verwendet.
 		
 		\subsubsection{Auswertung n = 10}
-			Der Vergleich der beiden Numerischen lösungen, einmal mit angepasster Seite und einmal ohne, liefert folgenden Plot.
+			Der Vergleich beider numerischen lösungen, mit extra gewicht und ohne, liefert folgenden Plot.
 			
 		\begin{figure}[H] 
 	 		\centering
@@ -434,20 +430,20 @@ def create_matrix(n):
 	 		\label{fig:Bild5}
 	 	\end{figure}
 	 	
-	 	Es ist erkenntlich, dass der Punkt der größten Auslenkung für $n = 10$ sich nicht verändert hatt, jedoch der Betrag der Auslenkung gewachsen ist.
-	 	Deutlicher wird die linksverschiebung der größten Auslenkung für größere $n$.
+	 	Es ist erkenntlich, dass der Punkt mit der größten Auslenkung für $n = 10$ sich nicht verändert hatt, jedoch der Betrag der Auslenkung gewachsen ist.
+	 	Deutlicher wird die Linksverschiebung der größten Auslenkung für größere $n$.
 	 	\newpage
 	 	\subsubsection{Auswertung für k's}
-	 		Dieses mal werden nur $k<=5$ ausgewertet um die berechnungen in einem Zeitlichen Rahmen halten zu können. Für die Konvergenzgeschwindigkeit spielt die rechte Seite, 
-	 		in diesem Fall, eine untergeordnete Rolle. Somit ist nicht zu erwarten dass die Resultate diesmal besser, oder schneller sind. Die berechnungen werden mit einer
-	 		angepassten $multi\_solve$ Funktion durchgeführt (nur anpassung bezüglich der Ausgabe, keine Algorithmischen).
+	 		Dieses mal werden nur $k<=5$ ausgewertet um die Berechnungen in einem zeitlichen Rahmen halten zu können. Für die Konvergenzgeschwindigkeit spielt die rechte Seite, 
+	 		in diesem Fall, eine untergeordnete Rolle. Somit ist nicht zu erwarten dass die Resultate diesmal besser, oder schneller sind. Die Berechnungen werden mit einer
+	 		angepassten $multi\_solve$ Funktion durchgeführt (nur anpassung bezüglich der Ausgabe, keine algorithmischen).
 		\begin{figure}[H] 
 	 		\centering
 	 		\includegraphics[width=0.9\textwidth]{extra_k.png}
 	 		\caption{Plots mit max\_iter = 1000000}
 	 		\label{fig:Bild6}
 	 	\end{figure}
-	 	Dem Plot kann entnommen werden, dass sich der Punkt mit maximaler Auslenkung tatsächlich leicht nach links verschiebt. Nähmlich zwischen $x=4$ und $x=5$
+	 	Dem Plot kann entnommen werden, dass sich der Punkt mit maximaler Auslenkung tatsächlich leicht nach Links verschiebt. Nähmlich zwischen $x=4$ und $x=5$
 
 \newpage
 \section{Erklärung}
