@@ -1,0 +1,7 @@
+https://de.wikipedia.org/wiki/PageRank
+
+http://www.cs.cmu.edu/~elaw/pagerank.pdf
+
+-------------------------------------------------
+
+https://de.wikipedia.org/wiki/Gerschgorin-Kreis
